@@ -1,6 +1,7 @@
 ---
 import Container from "src/components/Container.astro";
-import NavBar from "src/components/NavBar.astro";
+import Navbar from "@components/Navbar.astro";
+
 interface Props {
   title: string;
 }
@@ -19,7 +20,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-Fondo h-screen">
-    <NavBar />
+    <Navbar />
     <main>
       <slot />
     </main>
