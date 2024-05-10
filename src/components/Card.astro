@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import { getI18N } from "@i18n/index";
+interface Props {
+  title: string;
+  body: string;
+  image: ImageMetadata;
+}
+const { title, body, image } = Astro.props;
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { button } = i18n.Cards;
+---
+
+<div
+  class="relative flex w-full place-content-center max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-slate-700 shadow-lg"
+>
+  <div
+    class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-slate-500 bg-clip-border shadow-blue-slate-500/40"
+  >
+    <Image src={image} alt={title} />
+    <div
+      class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"
+    >
+    </div>
+  </div>
+  <div class="p-6">
+    <div class="flex items-center justify-between mb-3">
+      <h5
+        class="font-sans text-xl text-center lg:text-left antialiased font-medium leading-snug tracking-normal text-blue-slate-900"
+      >
+        {title}
+      </h5>
+    </div>
+    <p
+      class="block font-sans text-center lg:text-left text-base antialiased font-light leading-relaxed text-slate-700"
+    >
+      {body}
+    </p>
+  </div>
+  <div class="p-6 pt-3">
+    <button
+      class="block w-full select-none rounded-lg bg-slate-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-slate-900/10 transition-all hover:shadow-lg hover:shadow-slate-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      type="button"
+    >
+      {button}
+    </button>
+  </div>
+</div>

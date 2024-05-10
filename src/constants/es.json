@@ -1,0 +1,40 @@
+{
+    "SEO": {
+        "title": "Geobint Web",
+        "description": "Explora el geoportal del Ayuntamiento de Jerez. Accede a mapas, catálogos y servicios geográficos para impulsar el desarrollo de Jerez."
+    },
+    "Navbar": {
+        "title": "Ayuntamiento de Jerez",
+        "nav1": "Bienvenido al geoportal",
+        "nav2": "Cátalogo y descarga",
+        "nav3": "Directorio de servicios",
+        "nav4": "Documentacion"
+    },
+    "Cards": {
+        "Mapas": {
+            "subTitle": "Visor de Mapas",
+            "body": "Zona de visualización de todos los mapas disponibles para consulta"
+        },
+        "Catalogo": {
+            "title": "Catálogo y Descarga",
+            "body": "Zona de consulta de los catálogos disponibles"
+        },
+        "Directorio": {
+            "title": "Directorio de servicios",
+            "body": "Zona del catalogo de servicios disponibles para el ciudadano"
+        },
+        "Direccion": {
+            "title": "Documentación",
+            "body": "Zona de consulta de la documentación disponible"
+        },
+        "button": "Ir a la sección"
+    },
+    "BottomSection": {
+        "title": "Infraestructura de Datos Espaciales (IDE) del Ayuntamiento de Jerez",
+        "body": "Una Infraestructura de Datos Espaciales (IDE) es un sistema de información integrado por un conjunto de recursos dedicados a gestionar información geográfica y disponibles en internet, para favorecer la interoperabilidad y que permiten que un usuario, utilizando un navegador, utilizarlos y combinarlos según sus necesidades, promoviendo el desarrollo social, económico y ambiental del territorio"
+    },
+    "Footer": {
+        "title": "Ayuntamiento de Jerez, C/ Consistorio 15, 11403",
+        "phone": "956 14 93 00"
+    }
+}

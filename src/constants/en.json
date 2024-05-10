@@ -1,0 +1,40 @@
+{
+    "SEO": {
+        "title": "Geobint Web",
+        "description": "Explore the Jerez City Council geoportal. Access maps, catalogs, and geographic services to boost Jerez's development."
+    },
+    "Navbar": {
+        "title": "Jerez City Council",
+        "nav1": "Welcome to the geoportal",
+        "nav2": "Catalog and download",
+        "nav3": "Service directory",
+        "nav4": "Documentation"
+    },
+    "Cards": {
+        "Mapas": {
+            "subTitle": "Map Viewer",
+            "body": "Viewing area for all available maps for consultation"
+        },
+        "Catalogo": {
+            "title": "Catalog and Download",
+            "body": "Consultation area for available catalogs"
+        },
+        "Directorio": {
+            "title": "Service Directory",
+            "body": "Catalog area of services available to citizens"
+        },
+        "Direccion": {
+            "title": "Documentation",
+            "body": "Area for consulting available documentation"
+        },
+        "button": "Go to section"
+    },
+    "BottomSection": {
+        "title": "Spatial Data Infrastructure (SDI) of Jerez City Council",
+        "body": "A Spatial Data Infrastructure (SDI) is an integrated information system consisting of a set of resources dedicated to managing geographical information and available online, to foster interoperability and allow users, using a browser, to use and combine them according to their needs, promoting social, economic, and environmental development of the territory"
+    },
+    "Footer": {
+        "title": "Jerez City Council, C/ Consistorio 15, 11403",
+        "phone": "956 14 93 00"
+    }
+}
