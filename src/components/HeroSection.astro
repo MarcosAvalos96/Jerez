@@ -1,0 +1,27 @@
+---
+import Navbar from "./Navbar.astro";
+import { Image } from "astro:assets";
+import logo from "@assets/logoblancoj.webp";
+import logoeu from "@assets/unioneu.webp";
+import Cards from "@components/CardGrid.astro";
+import { getI18N } from "@i18n/index";
+import Intro from "@components/common/Intro.astro";
+import Card from "./CardGrid.astro";
+import Container from "./Container.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const { title, nav1, nav2, nav3, nav4, subTitle, descTitle } = i18n.Navbar;
+---
+
+<section
+  class="bg-cover bg-center bg-no-repeat h-screen relative bg-heroMain w-full lg:bg-fixed"
+>
+  <div class="">
+    <Navbar />
+    <Intro />
+    <Card />
+    <div class="max-w-[1400px] mx-auto"></div>
+  </div>
+</section>

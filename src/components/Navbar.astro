@@ -1,68 +1,41 @@
 ---
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-//import ThemeToggle from "@components/ThemeToggle";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "src/i18n/utils";
 import { Image } from "astro:assets";
-import NavImg from "@assets/navImg.webp";
-import Logjer from "@assets/logoJ.webp";
+import Link from "./common/Link.astro";
 import logo from "@assets/logoblancoj.webp";
+import SwitchLanguage from "./SwitchLanguage.astro";
+import { getI18N } from "@i18n/index";
 
-const menuitems = [
-  {
-    title: "Bienvenido al geoportal",
-    path: "/volcancafe/",
-  },
-  {
-    title: "Cátalogo y descarga",
-    path: "/volcancafe/",
-  },
-  {
-    title: "Directorio de servicios",
-    path: "/volcancafe/",
-  },
-  {
-    title: "Documentacion",
-    path: "/volcancafe/",
-  },
-  /* 
-  {
-    title: "Tours",
-    path: "/volcancafe/tours",
-  },
-  { title: "Bodas", path: "/volcancafe/bodas" },
-
-  {
-    title: "Contacto",
-    path: "/volcancafe/contacto",
-  },
-  {
-    title: "L",
-    path: "/volcancafe/Show3",
-  }, */
-];
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { title, nav1, nav2, nav3, nav4, subTitle } = i18n.Navbar;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
-<div
-  class=".shadow-xl text-white h-auto font-bold sticky top-0 z-50 bg-gradient-to-r from-blue-900 via-blue-950 to-blue-900"
->
+<!-- class=".shadow-xl text-white h-auto font-bold sticky top-0 z-50 bg-gradient-to-r
+from-blue-900 via-blue-950 to-blue-900" -->
+<div>
   <div class="max-w-[1400px] mx-auto">
     <header class="flex flex-col lg:flex-row justify-between items-center">
       <Astronav>
         <div
-          class="flex w-full lg:w-auto items-center justify-between lg:justify-between"
+          class="flex w-full lg:w-auto items-center justify-between lg:justify-between p-5"
         >
           <a
-            href="/"
+            href={translatePath("/")}
             class="text-2xl flex items-center"
-            aria-label="Index Volcán y café - Agencia Turística"
+            aria-label={title}
+            title={t("nav.index")}
           >
-            <Image
-              alt="Navbar Logo"
-              quality="low"
-              format="avif"
-              src={logo}
-              class="xl:w-1/5 md:block flex sm:w-1/6 sm:mx-auto xl:mx-0"
-            />
-            <span class="sm:hidden md:inline hidden">Ayuntamiento de Jerez</span
+            <span style="color: white;" class="sm:hidden md:inline hidden"
+              >{nav1}</span
             >
           </a>
 
@@ -73,23 +46,18 @@ const menuitems = [
         <MenuItems
           class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 backdrop-brightness-100"
         >
-          <div class="flex flex-col lg:flex-row lg:gap-2">
-            {
-              menuitems.map((item) => (
-                <ul>
-                  <li class="flex lg:px-4 lg:py-10 p-2 px-4 ">
-                    <a
-                      href={item.path}
-                      class=" hover:underline text-lg  hover:scale-110 duration-300"
-                      aria-label={item.title}
-                    >
-                      {item.title}
-                    </a>
-                  </li>
-                </ul>
-              ))
-            }
-            <!--   <ThemeToggle client:load /> -->
+          <div
+            class="flex lg:gap-10 justify-center items-center place-content-between"
+          >
+            <!-- <ul class="flex-row flex">
+              <Link title={nav1} />
+              <Link title={nav2} />
+              <Link title={nav3} />
+              <Link title={nav4} />
+            </ul> -->
+            <SwitchLanguage />
+            <SwitchLanguage />
+            <SwitchLanguage />
           </div>
         </MenuItems>
       </Astronav>

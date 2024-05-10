@@ -1,0 +1,15 @@
+---
+import BottomSection from "@components/BottomSection.astro";
+import CardGrid from "@components/CardGrid.astro";
+import Layout from "@layouts/Layout.astro";
+import { getI18N } from "@i18n/index";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { title, description } = i18n.SEO;
+---
+
+<Layout title={title} description={description}>
+  <CardGrid />
+  <BottomSection />
+</Layout>
