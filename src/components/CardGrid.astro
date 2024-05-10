@@ -2,6 +2,10 @@
 import Card from "./Card.astro";
 import Container from "./Container.astro";
 import trial from "@assets/images/card.webp";
+import cat from "@assets/images/Catalogo.webp";
+import doc from "@assets/images/Documentación.webp";
+import mapa from "@assets/images/Mapa.webp";
+import dir from "@assets/images/Directorio.webp";
 import { getI18N } from "@i18n/index";
 
 const { currentLocale } = Astro;
@@ -11,9 +15,9 @@ const { Mapas, Catalogo, Directorio, Direccion } = i18n.Cards;
 
 <Container className="p-8 my-8">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-    <Card title={Mapas.subTitle} image={trial} body={Mapas.body} />
-    <Card title={Catalogo.title} image={trial} body={Catalogo.body} />
-    <Card title={Directorio.title} image={trial} body={Directorio.body} />
-    <Card title={Direccion.title} image={trial} body={Direccion.body} />
+    <Card title={Mapas.subTitle} image={mapa} body={Mapas.body} />
+    <Card title={Catalogo.title} image={cat} body={Catalogo.body} />
+    <Card title={Directorio.title} image={dir} body={Directorio.body} />
+    <Card title={Direccion.title} image={doc} body={Direccion.body} />
   </div>
 </Container>
