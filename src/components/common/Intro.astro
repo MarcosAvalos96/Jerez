@@ -1,60 +1,51 @@
 ---
 import { Image } from "astro:assets";
-import logo from "@assets/logoblancoj.webp";
+import logo from "@assets/jerez-logo-blanco.webp";
 import logoeu from "@assets/unioneu.webp";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 import { getI18N } from "@i18n/index";
-const { title, nav1, nav2, nav3, nav4, subTitle, descTitle } = i18n.Navbar;
+const { body, title, footerSection } = i18n.Main;
 ---
 
-<div
-  class="flex w-full lg:w-auto items-center justify-between lg:justify-between p-5"
+<section
+  class="px-4 py-2 w-fit lg:w-1/2 flex flex-col place-content-center items-center text-center md:text-left md:place-content-start"
 >
-  <h1 class="text-3xl flex items-center" style="color: white;">
-    {subTitle}
-  </h1>
-</div>
-<div class="flex w-full lg:w-auto items-center flex-start lg:flex-start p-5">
-  <div class="linea-amarilla"></div>
-  <h1 class="text-1xl flex items-center" style="color: white;">
-    {descTitle}
-  </h1>
-</div>
-<div class="flex w-full lg:w-auto items-center flex-start lg:flex-start">
-  <Image
-    alt="Navbar Logo"
-    quality="low"
-    format="avif"
-    src={logo}
-    class="xl:w-1/1 md:block flex sm:w-1/6 sm:mx-auto xl:mx-0"
-  />
-  <p style="color: white;">
-    Ayuntamiento<br />
-    de Jerez<br />
-  </p>
-  <p
-    style="color: white;  font-size: smaller; text-align: right;padding-right: 10px;"
+  <div class="flex flex-col lg:flex-row items-start mb-8 justify-between gap-4">
+    <div>
+      <h1 class="text-3xl text-white font-extrabold mb-4">
+        {title}
+      </h1>
+      <p class="text-white text-xl text-pretty">
+        {body}
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="flex items-center justify-center lg:justify-between gap-4 px-4 lg:px-0"
   >
-    Unión Europea<br />
-    Fondo Europeo <br />
-    de Desarrollo Regional<br />
-    “Una manera de hacer Europa”
-  </p>
-  <Image
-    alt="Navbar Logo"
-    quality="low"
-    format="avif"
-    src={logoeu}
-    class="xl:w-1/1 md:block flex sm:w-1/6 sm:mx-auto xl:mx-0"
-  />
-</div>
-<style>
-  .linea-amarilla {
-    width: 10px; /* Ancho de la línea */
-    padding: 10px;
-    /* Altura igual al contenedor */
-    background-color: yellow; /* Color de la línea */
-  }
-</style>
+    <div class="flex items-center gap-4 flex-col md:flex-row">
+      <Image alt="Logo del Ayuntamiento de Jerez" src={logo} class="w-1/6" />
+      <div class="text-white">
+        <div>
+          <span class="text-xs font-bold">
+            {footerSection.title}
+          </span>
+          <span class="text-xs">
+            {footerSection.body}
+          </span>
+          <span class="text-xs">
+            {footerSection.quote}
+          </span>
+        </div>
+      </div>
+    </div>
+    <Image
+      alt="Logo de la Unión Europea"
+      src={logoeu}
+      class="w-1/6 hidden lg:block"
+    />
+  </div>
+</section>

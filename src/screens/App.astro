@@ -1,6 +1,7 @@
 ---
 import BottomSection from "@components/BottomSection.astro";
 import CardGrid from "@components/CardGrid.astro";
+import HeroSection from "@components/HeroSection.astro";
 import Layout from "@layouts/Layout.astro";
 import { getI18N } from "@i18n/index";
 
@@ -10,6 +11,7 @@ const { title, description } = i18n.SEO;
 ---
 
 <Layout title={title} description={description}>
+  <HeroSection />
   <CardGrid />
   <BottomSection />
 </Layout>

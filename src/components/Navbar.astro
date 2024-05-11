@@ -5,24 +5,19 @@ import {
   useTranslations,
   useTranslatedPath,
 } from "src/i18n/utils";
-import { Image } from "astro:assets";
-import Link from "./common/Link.astro";
-import logo from "@assets/logoblancoj.webp";
 import SwitchLanguage from "./SwitchLanguage.astro";
 import { getI18N } from "@i18n/index";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
-const { title, nav1, nav2, nav3, nav4, subTitle } = i18n.Navbar;
+const { title, nav1 } = i18n.Navbar;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<!-- class=".shadow-xl text-white h-auto font-bold sticky top-0 z-50 bg-gradient-to-r
-from-blue-900 via-blue-950 to-blue-900" -->
-<div>
-  <div class="max-w-[1400px] mx-auto">
+<nav>
+  <div class="mx-auto">
     <header class="flex flex-col lg:flex-row justify-between items-center">
       <Astronav>
         <div
@@ -63,4 +58,4 @@ from-blue-900 via-blue-950 to-blue-900" -->
       </Astronav>
     </header>
   </div>
-</div>
+</nav>
