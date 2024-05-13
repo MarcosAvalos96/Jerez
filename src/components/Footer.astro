@@ -1,28 +1,48 @@
 ---
-// import SocialIcons from "@components/layout/SocialIcons.astro";
+import { Image } from "astro:assets";
+import { getI18N } from "@i18n/index";
+import FooterLogo from "@assets/jerez-logo-color.webp";
+import Container from "./Container.astro";
+import FaceImage from "@assets/icons/footer/face.webp";
+import InstaImage from "@assets/icons/footer/insta.webp";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { one, two, three } = i18n.Footer["1st"];
+const { four, five } = i18n.Footer["2nd"];
 ---
 
-<footer
-  class="w-full bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-900 via-zinc-950 to-zinc-900 p-5"
->
-  <div class="flex flex-col items-center sm:flex-row sm:justify-between">
-    <p class="text-sm text-gray-100 dark:text-gray-300">
-      © Copyright 2024 <a
-        target="_blank"
-        href=""
-        class="text-white hover:text-lime-500"></a>
-    </p>
-    <div>
-      <p class="text-sm text-gray-100 dark:text-gray-300">
-        Aviso legal y politica de privacidad <a
-          target="_blank"
-          href=""
-          class="text-white hover:text-lime-500"></a>
-      </p>
+<footer class="text-textColor p-8">
+  <Container
+    className=" flex flex-col lg:flex-row place-content-center gap-8 mx-auto items-center justify-between"
+  >
+    <!-- Logo Section -->
+    <div class="flex items-center">
+      <Image
+        src={FooterLogo}
+        alt="Logo de Ayuntamiento de Jerez"
+        class="h-auto w-full transition-all md:w-36 lg:w-40"
+      />
     </div>
-
-    <div style="margin-top:5px" class="flex space-x-4">
-      <!-- <SocialIcons iconColor="white" /> -->
+    <!-- Text Section -->
+    <div
+      class="text-center py-2 md:py-0 md:text-center md:flex-1 flex gap-4 md:gap-0 flex-col place-content-center items-center"
+    >
+      <div class="text-textColor text-xl mb-2 md:mb-0">
+        <span>{one} | </span>
+        <span>{two} | </span>
+        <span>{three}</span>
+      </div>
+      <div>
+        <strong>{four} | </strong>
+        <span>{five}</span>
+      </div>
     </div>
-  </div>
+    <!-- Social Icons Section -->
+    <div class="flex space-x-4 place-content-center lg:place-content-end">
+      <Image src={FaceImage} alt="facebook Link" class="h-8 w-8" />
+      <Image src={InstaImage} alt="Instagram Link" class="h-8 w-8" />
+    </div>
+  </Container>
 </footer>
+<div class="bg-primary h-8 w-full"></div>

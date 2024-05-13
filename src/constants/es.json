@@ -1,42 +1,56 @@
 {
-  "SEO": {
-    "title": "Geobint Web",
-    "description": "Explora el geoportal del Ayuntamiento de Jerez. Accede a mapas, catálogos y servicios geográficos para impulsar el desarrollo de Jerez."
-  },
-  "Navbar": {
-    "title": "Ayuntamiento de Jerez",
-    "nav1": "Bienvenido al Geoportal",
-    "nav2": "Cátalogo y descarga",
-    "nav3": "Directorio de servicios",
-    "nav4": "Documentacion",
-    "subTitle": "Infraestructura de datos espaciales del Ayuntamiento de Jerez",
-    "descTitle": "Accede, combina y transforma datos geográficoscon una Infraestructura de Datos Espaciales"
-  },
-  "Cards": {
-    "Mapas": {
-      "subTitle": "Visor de Mapas",
-      "body": "Zona de visualización de todos los mapas disponibles para consulta"
+    "SEO": {
+        "title": "Geobint Web",
+        "description": "Explora el geoportal del Ayuntamiento de Jerez. Accede a mapas, catálogos y servicios geográficos para impulsar el desarrollo de Jerez."
     },
-    "Catalogo": {
-      "title": "Catálogo y Descarga",
-      "body": "Zona de consulta de los catálogos disponibles"
+    "Navbar": {
+        "title": "Ayuntamiento de Jerez",
+        "nav1": "Bienvenido al geoportal",
+        "nav2": "Cátalogo y descarga",
+        "nav3": "Directorio de servicios",
+        "nav4": "Documentacion"
     },
-    "Directorio": {
-      "title": "Directorio de servicios",
-      "body": "Zona del catalogo de servicios disponibles para el ciudadano"
+    "Main": {
+        "subTitle": "Bienvenido al Geoportal",
+        "title": "Infraestructura de datos espaciales del Ayuntamiento de Jerez",
+        "body": "Accede, combina y transforma datos geográficos con una Infraestructura de Datos Espaciales",
+        "footerSection": {
+            "title": "Unión Europea",
+            "body": "Fondo Europeo de Desarrollo Regional",
+            "quote": "“Una manera de hacer Europa”"
+        }
     },
-    "Direccion": {
-      "title": "Documentación",
-      "body": "Zona de consulta de la documentación disponible"
+    "Cards": {
+        "Mapas": {
+            "subTitle": "Visor de Mapas",
+            "body": "Zona de visualización de todos los mapas disponibles para consulta"
+        },
+        "Catalogo": {
+            "title": "Catálogo y Descarga",
+            "body": "Zona de consulta de los catálogos disponibles"
+        },
+        "Directorio": {
+            "title": "Directorio de servicios",
+            "body": "Zona del catalogo de servicios disponibles para el ciudadano"
+        },
+        "Direccion": {
+            "title": "Documentación",
+            "body": "Zona de consulta de la documentación disponible"
+        }
     },
-    "button": "Ir a la sección"
-  },
-  "BottomSection": {
-    "title": "Infraestructura de Datos Espaciales (IDE) del Ayuntamiento de Jerez",
-    "body": "Una Infraestructura de Datos Espaciales (IDE) es un sistema de información integrado por un conjunto de recursos dedicados a gestionar información geográfica y disponibles en internet, para favorecer la interoperabilidad y que permiten que un usuario, utilizando un navegador, utilizarlos y combinarlos según sus necesidades, promoviendo el desarrollo social, económico y ambiental del territorio"
-  },
-  "Footer": {
-    "title": "Ayuntamiento de Jerez, C/ Consistorio 15, 11403",
-    "phone": "956 14 93 00"
-  }
+    "BottomSection": {
+        "title": "Infraestructura de Datos Espaciales (IDE) del Ayuntamiento de Jerez",
+        "body": "Una Infraestructura de Datos Espaciales (IDE) es un sistema de información integrado por un conjunto de recursos dedicados a gestionar información geográfica y disponibles en internet, para favorecer la interoperabilidad y que permiten que un usuario, utilizando un navegador, utilizarlos y combinarlos según sus necesidades, promoviendo el desarrollo social, económico y ambiental del territorio"
+    },
+    "Footer": {
+        "1st": {
+            "one": "Ayuntamiento de Jerez",
+            "two": "C/ Consistorio 15, 11403 ",
+            "three": "Contacto"
+        },
+        "2nd": {
+            "four": "Aviso legal y Política de privacidad",
+            "five": "956 14 93 00"
+        }
+    }
 }
