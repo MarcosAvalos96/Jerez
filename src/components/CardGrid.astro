@@ -6,7 +6,10 @@ import doc from "@assets/images/Documentación.webp";
 import mapa from "@assets/images/Mapa.webp";
 import dir from "@assets/images/Directorio.webp";
 import { getI18N } from "@i18n/index";
+import { getLangFromUrl, useTranslatedPath } from "@i18n/utils";
 
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const { Mapas, Catalogo, Directorio, Direccion } = i18n.Cards;
@@ -14,9 +17,29 @@ const { Mapas, Catalogo, Directorio, Direccion } = i18n.Cards;
 
 <Container className="p-8 my-8">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-    <Card title={Mapas.subTitle} src={mapa} body={Mapas.body} />
-    <Card title={Catalogo.title} src={cat} body={Catalogo.body} />
-    <Card title={Directorio.title} src={dir} body={Directorio.body} />
-    <Card title={Direccion.title} src={doc} body={Direccion.body} />
+    <Card
+      title={Mapas.subTitle}
+      src={mapa}
+      body={Mapas.body}
+      ruta={translatePath("/mapas/")}
+    />
+    <Card
+      title={Catalogo.title}
+      src={cat}
+      body={Catalogo.body}
+      ruta={translatePath("/catalogo/")}
+    />
+    <Card
+      title={Directorio.title}
+      src={dir}
+      body={Directorio.body}
+      ruta={translatePath("/directorio/")}
+    />
+    <Card
+      title={Direccion.title}
+      src={doc}
+      body={Direccion.body}
+      ruta={translatePath("/docs/")}
+    />
   </div>
 </Container>

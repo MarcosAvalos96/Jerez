@@ -5,7 +5,10 @@ import FooterLogo from "@assets/jerez-logo-color.webp";
 import Container from "./Container.astro";
 import FaceImage from "@assets/icons/footer/face.webp";
 import InstaImage from "@assets/icons/footer/insta.webp";
+import { getLangFromUrl, useTranslatedPath } from "@i18n/utils";
 
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const { one, two, three } = i18n.Footer["1st"];
@@ -17,13 +20,17 @@ const { four, five } = i18n.Footer["2nd"];
     className=" flex flex-col lg:flex-row place-content-center gap-8 mx-auto items-center justify-between"
   >
     <!-- Logo Section -->
-    <div class="flex items-center">
+    <a
+      class="flex items-center"
+      aria-label="Jerez Home"
+      href={translatePath("/")}
+    >
       <Image
         src={FooterLogo}
         alt="Logo de Ayuntamiento de Jerez"
         class="h-auto w-full transition-all md:w-36 lg:w-40"
       />
-    </div>
+    </a>
     <!-- Text Section -->
     <div
       class="text-center py-2 md:py-0 md:text-center md:flex-1 flex gap-4 md:gap-0 flex-col place-content-center items-center"
@@ -40,8 +47,20 @@ const { four, five } = i18n.Footer["2nd"];
     </div>
     <!-- Social Icons Section -->
     <div class="flex space-x-4 place-content-center lg:place-content-end">
-      <Image src={FaceImage} alt="facebook Link" class="h-8 w-8" />
-      <Image src={InstaImage} alt="Instagram Link" class="h-8 w-8" />
+      <a
+        href="https://www.facebook.com/AyuntamientodeJerez"
+        target="_blank"
+        aria-label="Facebook Link"
+      >
+        <Image src={FaceImage} alt="facebook Link" class="h-8 w-8" />
+      </a>
+      <a
+        href="https://www.instagram.com/aytojerez/"
+        target="_blank"
+        aria-label="Facebook Link"
+      >
+        <Image src={InstaImage} alt="Instagram Link" class="h-8 w-8" />
+      </a>
     </div>
   </Container>
 </footer>
