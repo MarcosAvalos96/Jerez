@@ -17,7 +17,7 @@ const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const { one, two, three } = i18n.Footer["1st"];
 const { four, five } = i18n.Footer["2nd"];
-
+---
 
 <footer class="text-textColor p-8">
   <!-- Esto va cargar solo cuando el cliente llegue a visualizar esta parte footer client:load -->
