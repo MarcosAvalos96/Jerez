@@ -27,7 +27,12 @@ const { body, title, footerSection } = i18n.Main;
     class="flex items-center justify-center lg:justify-between gap-4 px-4 lg:px-0"
   >
     <div class="flex items-center gap-4 flex-col md:flex-row">
-      <Image alt="Logo del Ayuntamiento de Jerez" src={logo} class="w-1/6" />
+      <Image
+        alt="Logo del Ayuntamiento de Jerez"
+        src={logo}
+        class="w-1/6"
+        loading={"eager"}
+      />
       <div class="text-white">
         <div>
           <span class="text-xs font-bold">
@@ -46,6 +51,7 @@ const { body, title, footerSection } = i18n.Main;
       alt="Logo de la Unión Europea"
       src={logoeu}
       class="w-1/6 hidden lg:block"
+      loading={"eager"}
     />
   </div>
 </section>

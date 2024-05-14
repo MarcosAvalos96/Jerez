@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import FileImage from "@assets/images/Docs/pdf.webp";
+---
+
+<div class="card glass group bg-slate-200/80">
+  <figure>
+    <Image
+      src={FileImage}
+      alt="PDF file"
+      quality={"low"}
+      loading={"eager"}
+      format={"avif"}
+      class={" group-hover:scale-110 transition-all ease-in "}
+    />
+  </figure>
+  <div class="card-body text-center">
+    <p class="text-textColor">Manual de usuario</p>
+    <div class="card-actions justify-center">
+      <button class="btn bg-primary text-Fondo">Descargar</button>
+    </div>
+  </div>
+</div>

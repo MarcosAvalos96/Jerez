@@ -37,6 +37,7 @@ const otherLocales = Object.values(languages).filter(
         otherLocales.map((locale) => (
           <li class="py-[2px]">
             <a
+              aria-label="Home Link"
               class="rounded-md bg-black/30 hover:bg-black/70 whitespace-no-wrap inline-flex justify-start items-center w-full px-2 py-2"
               href={translatePath(`/${route ? route : ""}`, locale.code)}
             >
