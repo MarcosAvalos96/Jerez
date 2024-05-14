@@ -23,12 +23,11 @@ const otherLocales = Object.values(languages).filter(
   >
     <button
       type="button"
-      class="inline-flex justify-start items-center w-full gap-x-2 px-2 py-2"
+      class="inline-flex justify-start items-center w-full px-2 py-2"
       aria-expanded="true"
       aria-haspopup="true"
     >
       <currentLocaleData.flag />
-      {currentLocaleData.code}
       <ChevronIcon />
     </button>
     <ul
@@ -38,11 +37,10 @@ const otherLocales = Object.values(languages).filter(
         otherLocales.map((locale) => (
           <li class="py-[2px]">
             <a
-              class="rounded-md bg-black/30 hover:bg-black/70 whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2"
+              class="rounded-md bg-black/30 hover:bg-black/70 whitespace-no-wrap inline-flex justify-start items-center w-full px-2 py-2"
               href={translatePath(`/${route ? route : ""}`, locale.code)}
             >
               <locale.flag />
-              {locale.code}
             </a>
           </li>
         ))

@@ -1,7 +1,9 @@
 ---
 import Footer from "@components/Footer.astro";
 import HeroSection from "@components/HeroSection.astro";
+import { ViewTransitions } from "astro:transitions";
 import { getLangFromUrl } from "@i18n/utils";
+import { fade, slide } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -20,9 +22,11 @@ const lang = getLangFromUrl(Astro.url);
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.bmp" />
     <meta name="generator" content={Astro.generator} />
+    <ViewTransitions transition:animate={slide({ duration: ".5s" })} />
     <title>{title}</title>
   </head>
   <body class="bg-Fondo">
+    <HeroSection />
     <main>
       <slot />
     </main>

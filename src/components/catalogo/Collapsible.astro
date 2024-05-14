@@ -1,0 +1,39 @@
+---
+import Table from "./Table.astro";
+---
+
+<div class="join join-vertical w-full py-8 text-textColor">
+  <div class="collapse collapse-arrow join-item">
+    <input type="radio" name="my-accordion-4" checked="checked" />
+    <div
+      class="collapse-title text-xl font-medium p-4 bg-primary text-Fondo rounded-xl"
+    >
+      Número del protal
+    </div>
+    <div class="collapse-content">
+      <Table />
+    </div>
+  </div>
+  <div class="collapse collapse-arrow join-item">
+    <input type="radio" name="my-accordion-4" />
+    <div
+      class="collapse-title text-xl font-medium mt-4 p-4 bg-primary text-Fondo rounded-xl"
+    >
+      Tramos viales
+    </div>
+    <div class="collapse-content">
+      <Table />
+    </div>
+  </div>
+  <div class="collapse collapse-arrow join-item">
+    <input type="radio" name="my-accordion-4" />
+    <div
+      class="collapse-title text-xl font-medium p-4 mt-4 bg-primary text-Fondo rounded-xl"
+    >
+      Parking
+    </div>
+    <div class="collapse-content">
+      <Table />
+    </div>
+  </div>
+</div>

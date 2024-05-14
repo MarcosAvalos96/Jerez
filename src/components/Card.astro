@@ -1,25 +1,29 @@
 ---
 import { Image } from "astro:assets";
 interface Props {
+  ruta: string;
   title: string;
   body: string;
   src: ImageMetadata;
 }
-const { title, body, src } = Astro.props;
+const { title, body, src, ruta } = Astro.props;
 ---
 
-<div
+<a
   class="group hover:shadow-sm hover:cursor-pointer relative flex w-full place-content-center max-w-[26rem] flex-col rounded-xl bg-clip-border text-slate-700"
+  aria-label={title}
+  href={ruta}
 >
   <!-- Imagen-->
   <div
-    class="relative mx-4 mt-4 overflow-hidden text-white rounded-full bg-blue-slate-500 bg-clip-border shadow-blue-slate-500/40"
+    class="relative mx-4 mt-4 overflow-hidden text-white bg-blue-slate-500 bg-clip-border shadow-blue-slate-500/40 rounded-xl"
   >
     <Image
       src={src}
       alt={"Jerez Ayuntamiento"}
-      class="transition-all shadow-2xl ease-in group-hover:scale-110 rounded-full aspect-square"
-      
+
+      class="transition-all shadow-2xl ease-in group-hover:scale-110 rounded-xl aspect-square"
+
     />
     <div
       class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"
@@ -38,4 +42,4 @@ const { title, body, src } = Astro.props;
       {body}
     </p>
   </div>
-</div>
+</a>

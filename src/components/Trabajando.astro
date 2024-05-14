@@ -1,0 +1,17 @@
+---
+import { getLangFromUrl, useTranslatedPath } from "@i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+---
+
+<div class="bg-gray-100">
+  <div class="flex flex-col justify-center items-center min-h-screen">
+    <p class="text-4xl font-medium text-gray-800">
+      Still working in this section
+    </p>
+    <a
+      href={translatePath("/")}
+      class="mt-4 text-xl text-blue-600 hover:underline">Go back home</a
+    >
+  </div>
+</div>

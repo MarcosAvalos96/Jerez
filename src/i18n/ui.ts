@@ -13,19 +13,35 @@ export const defaultLang = "es";
 export const showDefaultLang = false;
 
 export const ui = {
-  en: {
-    "nav.index": "Home",
-  },
   es: {
     "nav.index": "Inicio",
+    "nav.mapas": "Visor de mapas",
+    "nav.catalogo": "Catálogo y descarga",
+    "nav.directorio": "Directorio de servicios",
+    "nav.docs": "Documentación",
+  },
+  en: {
+    "nav.index": "Home",
+    "nav.mapas": "Map viewer",
+    "nav.catalogo": "Catalog and Download",
+    "nav.directorio": "Service Directory",
+    "nav.docs": "Documentation",
   },
 } as const;
 
 export const routes = {
   en: {
     index: "home",
+    mapas: "mapas",
+    catalogo: "catalogo",
+    directorio: "directorio",
+    docs: "docs",
   },
   es: {
     index: "home",
+    mapas: "mapas",
+    catalogo: "catalogo",
+    directorio: "directorio",
+    docs: "docs",
   },
 };
