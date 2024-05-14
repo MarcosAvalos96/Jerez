@@ -3,14 +3,30 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@assets/*": ["src/assets/*"],
-      "@components/*": ["src/components/*"],
-      "@content/*": ["src/content/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@constants/*": ["src/constants/*"],
-      "@i18n/*": ["src/i18n/*"],
-      "@screens/*": ["src/screens/*"]
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@content/*": [
+        "src/content/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@i18n/*": [
+        "src/i18n/*"
+      ],
+      "@screens/*": [
+        "src/screens/*"
+      ]
     },
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }
