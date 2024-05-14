@@ -5,17 +5,24 @@ import FooterLogo from "@assets/jerez-logo-color.webp";
 import Container from "./Container.astro";
 import FaceImage from "@assets/icons/footer/face.webp";
 import InstaImage from "@assets/icons/footer/insta.webp";
+
 import { getLangFromUrl, useTranslatedPath } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
+
+import PruebaR from "./common/PruebaR";
+
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const { one, two, three } = i18n.Footer["1st"];
 const { four, five } = i18n.Footer["2nd"];
----
+
 
 <footer class="text-textColor p-8">
+  <!-- Esto va cargar solo cuando el cliente llegue a visualizar esta parte footer client:load -->
+  <!-- Header por ejemplo va visible  -->
+  <!-- <PruebaR client:visible /> -->
   <Container
     className=" flex flex-col lg:flex-row place-content-center gap-8 mx-auto items-center justify-between"
   >
