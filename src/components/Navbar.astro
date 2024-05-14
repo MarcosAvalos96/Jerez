@@ -7,7 +7,8 @@ import {
 } from "src/i18n/utils";
 import SwitchLanguage from "./SwitchLanguage.astro";
 import { getI18N } from "@i18n/index";
-
+import Bars from "@assets/icons/Navbar/Bars.astro";
+import User from "@assets/icons/Navbar/User.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const { title, nav1 } = i18n.Navbar;
@@ -42,17 +43,11 @@ const translatePath = useTranslatedPath(lang);
           class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 backdrop-brightness-100"
         >
           <div
-            class="flex lg:gap-10 justify-center items-center place-content-between"
+            class="flex lg:gap-4 justify-center items-center place-content-between"
           >
-            <!-- <ul class="flex-row flex">
-              <Link title={nav1} />
-              <Link title={nav2} />
-              <Link title={nav3} />
-              <Link title={nav4} />
-            </ul> -->
             <SwitchLanguage />
-            <SwitchLanguage />
-            <SwitchLanguage />
+            <User />
+            <Bars />
           </div>
         </MenuItems>
       </Astronav>
