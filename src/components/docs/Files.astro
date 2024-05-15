@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import FileImage from "@assets/images/Docs/pdf.webp";
 ---
 
-<div class="card glass group bg-slate-200/80">
+<div class="rounded-xl p-8 group bg-slate-200/80">
   <figure>
     <Image
       src={FileImage}
@@ -15,9 +15,9 @@ import FileImage from "@assets/images/Docs/pdf.webp";
     />
   </figure>
   <div class="card-body text-center">
-    <p class="text-textColor">Manual de usuario</p>
+    <p class="text-textColor mb-2">Manual de usuario</p>
     <div class="card-actions justify-center">
-      <button class="btn bg-primary text-Fondo">Descargar</button>
+      <button class="p-4 rounded-xl bg-primary text-Fondo">Descargar</button>
     </div>
   </div>
 </div>
