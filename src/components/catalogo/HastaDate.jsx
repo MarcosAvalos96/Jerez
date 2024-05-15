@@ -13,7 +13,7 @@ export default function HastaPicker() {
           {placements.map((placement) => (
             <DatePicker 
               label={"Hasta"} 
-              className="max-w-xs"
+              className="max-w-xs text-center"
               labelPlacement={placement}
             />
           ))}
