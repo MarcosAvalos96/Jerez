@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import logo from "@assets/jerez-logo-blanco.webp";
+import logoeu from "@assets/unioneu.webp";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+import { getI18N } from "@i18n/index";
+const { body, title, quote } = i18n.Main.footerSection;
+---
+
+<div
+  class="flex flex-col md:flex-row items-center place-content-center justify-center lg:justify-between gap-4 md:gap-2 pt-8 lg:pt-0 px-4 lg:px-0"
+>
+  <div class="w-full md:w-auto">
+    <Image
+      alt="Logo del Ayuntamiento de Jerez"
+      src={logo}
+      class="w-2/3 aspect-auto mx-auto md:mx-0"
+      loading="eager"
+    />
+  </div>
+  <div class="w-full text-white flex flex-col justify-center space-y-1">
+    <span class="text-xs font-bold md:text-left">
+      {title}
+    </span>
+    <span class="text-xs">
+      {body}
+    </span>
+    <span class="text-xs">
+      {quote}
+    </span>
+  </div>
+  <div class="w-full md:w-auto">
+    <Image
+      alt="Logo de la Unión Europea"
+      src={logoeu}
+      class="w-2/3 aspect-video md:mx-0 mx-auto"
+      loading="eager"
+    />
+  </div>
+</div>
