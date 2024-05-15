@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+const { nextui, commonColors } = require("@nextui-org/react");
+
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: [
+    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -10,6 +15,7 @@ export default {
         cardBg: "#f7f7f7",
         subTitle: "#4779bb",
         textColor: "#222222",
+        YellowPrimary: "#edc81b",
       },
       backgroundImage: {
         heroMain:
@@ -17,5 +23,32 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
+  darkMode: "class",
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            primary: "#182c6c",
+            background: "#ffffff",
+            footerBackground: "#f8f4ec",
+            cardBackground: "#f7f7f7",
+            subtitle: "#4779bb",
+            text: "#222222",
+          },
+        },
+        dark: {
+          colors: {
+            primary: "#182c6c",
+            background: "#ffffff",
+            footerBackground: "#f8f4ec",
+            cardBackground: "#f7f7f7",
+            subtitle: "#4779bb",
+            text: "#222222",
+          },
+        },
+      },
+      addCommonColors: true,
+    }),
+  ],
 };

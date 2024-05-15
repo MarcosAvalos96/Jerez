@@ -1,43 +1,41 @@
 ---
-import Creado from "./Creado.astro";
-import Formato from "./Formato.astro";
-import Titulo from "./Titulo.astro";
-import CheckBox from "./CheckBox.astro";
-import Buscar from "./Buscar.astro";
 import Container from "@components/Container.astro";
-import Collapsible from "./Collapsible.astro";
+import MultiSelect from "./MultiSelect";
+import RGComponet from "./RadioGroup";
+import GridAcordion from "./Acordion";
+import DesdePicker from "./DesdeDate";
+import HastaPicker from "./HastaDate";
+import KeyWords from "./KeyWord";
 ---
 
 <Container className="py-4">
-  <main class="bg-slate-200 p-4 rounded-xl my-4">
-    <h2
-      class="text-primary text-center lg:text-left font-bold text-4xl leading-tight mb-6"
-    >
-      Catálogo y Descarga
-    </h2>
+  <h2 class="text-primary text-center font-bold text-4xl leading-tight pt-4">
+    Catálogo y Descarga
+  </h2>
 
-    <section class="">
+  <main class="p-4 rounded-xl mb-8 bg-slate-200">
+    <section>
       <div
-        class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 space-x-4"
+        class="flex flex-col md:flex-row items-center justify-center md:justify-center space-y-4 md:space-y-0 md:space-x-4 flex-wrap"
       >
-        <div class="flex flex-grow items-center space-x-4">
+        <div class="flex flex-grow justify-center items-center gap-8">
           <!-- Primer CheckList -->
-          <Creado />
+          <MultiSelect client:load />
           <!-- Segundo CheckList -->
-          <Formato />
+          <DesdePicker client:load />
           <!-- Tercer CheckList -->
-          <Titulo />
-        </div>
-        <div class="flex items-center">
-          <Buscar />
+          <HastaPicker client:load />
+          <!-- Cuarto CheckList -->
+          <KeyWords client:load />
         </div>
       </div>
 
       <div class="flex flex-row justify-center items-center mt-6 space-x-4">
-        <CheckBox />
-        <button class="btn">Buscar</button>
+        <RGComponet client:load />
+        <button class="p-4 rounded-xl bg-cardBg text-textColor">Limpiar</button>
+        <button class="p-4 rounded-xl bg-primary text-Fondo">Buscar</button>
       </div>
     </section>
   </main>
-  <Collapsible />
+  <GridAcordion client:load />
 </Container>
