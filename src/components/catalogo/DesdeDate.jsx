@@ -13,7 +13,7 @@ export default function DesdePicker() {
           {placements.map((placement) => (
             <DatePicker 
               label={"Desde"} 
-              className=" max-w-[300px]"
+              className=" max-w-[300px] text-center"
               labelPlacement={placement}
             />
           ))}

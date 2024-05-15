@@ -16,14 +16,13 @@ const { title, body, src, ruta } = Astro.props;
 >
   <!-- Imagen-->
   <div
-    class="relative mx-4 mt-4 overflow-hidden text-white bg-blue-slate-500 bg-clip-border shadow-blue-slate-500/40 rounded-xl"
+    class="relative mt-4 overflow-hidden aspect-video text-white bg-blue-slate-500 bg-clip-border shadow-blue-slate-500/40 rounded-sm"
   >
     <Image
       src={src}
       alt={"Jerez Ayuntamiento"}
       loading={"eager"}
-      class="transition-all shadow-2xl ease-in group-hover:scale-110 rounded-xl aspect-square"
-
+      class="transition-all shadow-2xl ease-in group-hover:scale-110 rounded-md object-cover"
     />
     <div
       class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"

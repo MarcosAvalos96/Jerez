@@ -1,41 +1,24 @@
 ---
 import Container from "@components/Container.astro";
-import MultiSelect from "./MultiSelect";
-import RGComponet from "./RadioGroup";
-import GridAcordion from "./Acordion";
-import DesdePicker from "./DesdeDate";
-import HastaPicker from "./HastaDate";
-import KeyWords from "./KeyWord";
+
+import TableSection from "./TableSection";
+import Filter from "./Filter";
 ---
 
 <Container className="py-4">
-  <h2 class="text-primary text-center font-bold text-4xl leading-tight pt-4">
+  <h2
+    class="text-primary text-center md:text-left font-bold text-4xl leading-tight py-4"
+  >
     Catálogo y Descarga
   </h2>
 
-  <main class="p-4 rounded-xl mb-8 bg-slate-200">
-    <section>
-      <div
-        class="flex flex-col md:flex-row items-center justify-center md:justify-center space-y-4 md:space-y-0 md:space-x-4 flex-wrap"
-      >
-        <div class="flex flex-grow justify-center items-center gap-8">
-          <!-- Primer CheckList -->
-          <MultiSelect client:load />
-          <!-- Segundo CheckList -->
-          <DesdePicker client:load />
-          <!-- Tercer CheckList -->
-          <HastaPicker client:load />
-          <!-- Cuarto CheckList -->
-          <KeyWords client:load />
-        </div>
-      </div>
-
-      <div class="flex flex-row justify-center items-center mt-6 space-x-4">
-        <RGComponet client:load />
-        <button class="p-4 rounded-xl bg-cardBg text-textColor">Limpiar</button>
-        <button class="p-4 rounded-xl bg-primary text-Fondo">Buscar</button>
-      </div>
-    </section>
-  </main>
-  <GridAcordion client:load />
+  <Filter client:load />
+  <aside class="bg-primary rounded-lg">
+    <h2
+      class="text-white text-center md:text-left font-bold text-2xl leading-tight p-4"
+    >
+      Catálogo y Descarga
+    </h2>
+    <TableSection client:load />
+  </aside>
 </Container>
