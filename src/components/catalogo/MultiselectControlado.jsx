@@ -1,21 +1,8 @@
-import * as React from "react";
 import { Select, SelectItem, Tooltip } from "@nextui-org/react";
 import { titulo } from "@constants/data";
 
-export default function MultiSelect() {
-  const [personName, setPersonName] = React.useState([]);
-  const handleChange = (event) => {
-    const {
-      target: { value },
-    } = event;
-    setPersonName(
-      // On autofill we get a stringified value.
-      typeof value === "string" ? value.split(",") : value
-    );
-  };
-  const placements = ["outside"];
-  // Cuenta el número total de caracteres en personName
-  const totalCharacters = personName.join("").length;
+export default function MultiselectControlado({ values, setValues }) {
+  const totalCharacters = Array.isArray(values) ? values.join("").length : 0;
 
   const style =
     totalCharacters < 30
@@ -29,7 +16,7 @@ export default function MultiSelect() {
             style={style}
             key="outside"
             placement="bottom"
-            content={personName.join(", ")}
+            content={Array.isArray(values) ? values.join(", ") : ""}
             offset={-150}
             crossOffset={-120}
           >
@@ -39,12 +26,12 @@ export default function MultiSelect() {
               placeholder="Seleciona los titulos deseados"
               selectionMode="multiple"
               className="max-w-xs"
-              value={personName}
-              onChange={handleChange}
+              selectedKeys={values}
+              onSelectionChange={setValues}
             >
-              {titulo.map((name) => (
-                <SelectItem key={name.value} value={name.value}>
-                  {name.label}
+              {titulo.map((animal) => (
+                <SelectItem key={animal.value} value={animal.value}>
+                  {animal.label}
                 </SelectItem>
               ))}
             </Select>
