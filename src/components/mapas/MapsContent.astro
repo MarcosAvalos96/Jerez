@@ -1,0 +1,20 @@
+---
+import Container from "@components/Container.astro";
+import SearchSection from "./SearchSection.astro";
+import MapsGrid from "./MapsGrid.astro";
+import { getI18N } from "@i18n/index";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { title, placeHolder } = i18n.Maps;
+---
+
+<main class="bg-cardBg">
+  <Container className="py-4">
+    <h2 class="text-primary text-center font-bold text-4xl leading-tight py-4">
+      {title}
+    </h2>
+    <SearchSection placeHolder={placeHolder} />
+    <MapsGrid />
+  </Container>
+</main>

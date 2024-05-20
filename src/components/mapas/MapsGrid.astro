@@ -1,0 +1,19 @@
+---
+import MapsCard from "./MapsCard.astro";
+import { getI18N } from "@i18n/index";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { Cards } = i18n.Maps;
+---
+
+<main class="py-10">
+  <section
+    class="p-4 gap-5 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 transform duration-500"
+  >
+    {
+      Cards.map((mapa) => {
+        return <MapsCard title={mapa.title} subTitle={mapa.body} />;
+      })
+    }
+  </section>
+</main>
