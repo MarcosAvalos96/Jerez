@@ -20,6 +20,32 @@
             "quote": "“Una manera de hacer Europa”"
         }
     },
+    "Maps": {
+        "title": "Catálogo de mapas",
+        "placeHolder": "Buscar ...",
+        "Cards": [
+            {
+                "title": "Cartografía Ayto",
+                "body": "Jerez de la frontera"
+            },
+            {
+                "title": "Número de Portales",
+                "body": "Jerez de la frontera"
+            },
+            {
+                "title": "Vías Urbanas",
+                "body": "Jerez de la frontera"
+            },
+            {
+                "title": "Aparcamientos",
+                "body": "Jerez de la frontera"
+            },
+            {
+                "title": "Sensores Climáticos",
+                "body": "Jerez de la frontera"
+            }
+        ]
+    },
     "Cards": {
         "Mapas": {
             "subTitle": "Visor de Mapas",

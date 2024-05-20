@@ -20,6 +20,32 @@
             "quote": "“A way to make Europe”"
         }
     },
+    "Maps": {
+        "title": "Map Catalog",
+        "placeHolder": "Search ...",
+        "Cards": [
+            {
+                "title": "Ayto Cartography",
+                "body": "Jerez de la Frontera"
+            },
+            {
+                "title": "Number of Portals",
+                "body": "Jerez de la Frontera"
+            },
+            {
+                "title": "Urban Roads",
+                "body": "Jerez de la Frontera"
+            },
+            {
+                "title": "Parking Lots",
+                "body": "Jerez de la Frontera"
+            },
+            {
+                "title": "Climate Sensors",
+                "body": "Jerez de la Frontera"
+            }
+        ]
+    },
     "Cards": {
         "Mapas": {
             "subTitle": "Map Viewer",
