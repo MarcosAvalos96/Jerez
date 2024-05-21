@@ -10,6 +10,8 @@ export default {
     extend: {
       colors: {
         primary: "#182c6c",
+        Azul: "#22397d",
+        SoftBlue: "#155ab9",
         Fondo: "#ffffff",
         FooterF: "#f8f4ec",
         cardBg: "#f7f7f7",
@@ -30,6 +32,8 @@ export default {
         light: {
           colors: {
             primary: "#182c6c",
+            Azul: "#22397d",
+            SoftBlue: "#155ab9",
             background: "#ffffff",
             footerBackground: "#f8f4ec",
             cardBackground: "#f7f7f7",

@@ -26,23 +26,28 @@
         "Cards": [
             {
                 "title": "Cartografía Ayto",
-                "body": "Jerez de la frontera"
+                "body": "Jerez de la frontera",
+                "image": "M1"
             },
             {
                 "title": "Número de Portales",
-                "body": "Jerez de la frontera"
+                "body": "Jerez de la frontera",
+                "image": "M2"
             },
             {
                 "title": "Vías Urbanas",
-                "body": "Jerez de la frontera"
+                "body": "Jerez de la frontera",
+                "image": "M3"
             },
             {
                 "title": "Aparcamientos",
-                "body": "Jerez de la frontera"
+                "body": "Jerez de la frontera",
+                "image": "M4"
             },
             {
                 "title": "Sensores Climáticos",
-                "body": "Jerez de la frontera"
+                "body": "Jerez de la frontera",
+                "image": "M5"
             }
         ]
     },

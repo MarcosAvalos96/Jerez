@@ -26,23 +26,28 @@
         "Cards": [
             {
                 "title": "Ayto Cartography",
-                "body": "Jerez de la Frontera"
+                "body": "Jerez de la Frontera",
+                "image": "M1"
             },
             {
                 "title": "Number of Portals",
-                "body": "Jerez de la Frontera"
+                "body": "Jerez de la Frontera",
+                "image": "M2"
             },
             {
                 "title": "Urban Roads",
-                "body": "Jerez de la Frontera"
+                "body": "Jerez de la Frontera",
+                "image": "M3"
             },
             {
                 "title": "Parking Lots",
-                "body": "Jerez de la Frontera"
+                "body": "Jerez de la Frontera",
+                "image": "M4"
             },
             {
                 "title": "Climate Sensors",
-                "body": "Jerez de la Frontera"
+                "body": "Jerez de la Frontera",
+                "image": "M5"
             }
         ]
     },
