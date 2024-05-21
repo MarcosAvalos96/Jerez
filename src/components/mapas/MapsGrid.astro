@@ -12,7 +12,13 @@ const { Cards } = i18n.Maps;
   >
     {
       Cards.map((mapa) => {
-        return <MapsCard title={mapa.title} subTitle={mapa.body} />;
+        return (
+          <MapsCard
+            title={mapa.title}
+            subTitle={mapa.body}
+            imageName={mapa.image}
+          />
+        );
       })
     }
   </section>
