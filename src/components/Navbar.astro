@@ -22,7 +22,7 @@ const translatePath = useTranslatedPath(lang);
     <header class="flex flex-col lg:flex-row justify-between items-center">
       <Astronav>
         <div
-          class="flex w-full lg:w-auto items-center justify-between lg:justify-between p-5"
+          class="flex w-full lg:w-auto items-center justify-between lg:justify-between"
         >
           <a
             href={translatePath("/")}
@@ -31,8 +31,7 @@ const translatePath = useTranslatedPath(lang);
             title={t("nav.index")}
           >
             <span style="color: white;" class="sm:hidden md:inline hidden"
-              >{nav1}</span
-            >
+            ></span>
           </a>
 
           <div class="block lg:hidden px-4">
@@ -40,10 +39,10 @@ const translatePath = useTranslatedPath(lang);
           </div>
         </div>
         <MenuItems
-          class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 backdrop-brightness-100"
+          class="hidden w-full lg:w-auto lg:flex lg:mt-0 backdrop-brightness-100"
         >
           <div
-            class="flex lg:gap-4 justify-center items-center flex-row place-content-between"
+            class="flex lg:gap-8 justify-center items-center flex-row place-content-between"
           >
             <SwitchLanguage />
             <User />
