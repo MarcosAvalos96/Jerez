@@ -1,6 +1,12 @@
 ---
-import Copy from "@assets/icons/Directory/Copy.astro";
-import Link from "@assets/icons/Directory/Link.astro";
+import { getI18N } from "@i18n/index";
+import CopyButton from "./CopyButton";
+import IrButton from "./IrButton";
+import { table } from "node_modules/astro/dist/core/logger/core";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { DirectorioContent } = i18n;
 ---
 
 <section>
@@ -16,7 +22,7 @@ import Link from "@assets/icons/Directory/Link.astro";
                   class="px-12 py-3.5 text-sm font-normal text-left rtl:text-right text-textColor"
                 >
                   <button class="flex items-center gap-x-2">
-                    <span>Tipo de servicio</span>
+                    <span class="md:text-left">Tipo de servicio</span>
                   </button>
                 </th>
 
@@ -37,212 +43,33 @@ import Link from "@assets/icons/Directory/Link.astro";
               </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-              <tr>
-                <td
-                  class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap"
-                >
-                  <div
-                    class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-slate-200"
-                  >
-                    <h2 class="text-sm font-normal text-textColor">WMS</h2>
-                  </div>
-                </td>
-                <td class="px-4 py-4 text-sm text-textColor whitespace-nowrap"
-                  >Products Managers</td
-                >
-                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                  <div class="flex items-center gap-x-6">
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-emerald-500 focus:outline-none"
-                    >
-                      <Link />
-                    </button>
+              {
+                DirectorioContent.map((tabla) => {
+                  return (
+                    <tr>
+                      <td class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                        <div
+                          class={`inline-flex items-center px-3 py-1 rounded-full gap-x-2 ${tabla.title === "WMS" ? "bg-SoftBlue/30" : "bg-YellowPrimary/30"}`}
+                        >
+                          <h2 class="text-sm font-normal text-textColor">
+                            {tabla.title}
+                          </h2>
+                        </div>
+                      </td>
+                      <td class="px-4 py-4 text-sm text-textColor ">
+                        {tabla.body}
+                      </td>
+                      <td class="px-4 py-4 text-sm whitespace-nowrap">
+                        <div class="flex items-center gap-x-6">
+                          <IrButton route={tabla.url} client:load />
 
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-yellow-500 focus:outline-none"
-                    >
-                      <Copy />
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap"
-                >
-                  <div
-                    class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-slate-200"
-                  >
-                    <h2 class="text-sm font-normal text-textColor">WMS</h2>
-                  </div>
-                </td>
-                <td class="px-4 py-4 text-sm text-textColor whitespace-nowrap"
-                  >Products Managers</td
-                >
-                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                  <div class="flex items-center gap-x-6">
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-emerald-500 focus:outline-none"
-                    >
-                      <Link />
-                    </button>
-
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-yellow-500 focus:outline-none"
-                    >
-                      <Copy />
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap"
-                >
-                  <div
-                    class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-slate-200"
-                  >
-                    <h2 class="text-sm font-normal text-textColor">WFS</h2>
-                  </div>
-                </td>
-                <td class="px-4 py-4 text-sm text-textColor whitespace-nowrap"
-                  >Products Managers</td
-                >
-                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                  <div class="flex items-center gap-x-6">
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-emerald-500 focus:outline-none"
-                    >
-                      <Link />
-                    </button>
-
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-yellow-500 focus:outline-none"
-                    >
-                      <Copy />
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap"
-                >
-                  <div
-                    class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-slate-200"
-                  >
-                    <h2 class="text-sm font-normal text-textColor">WFS</h2>
-                  </div>
-                </td>
-                <td class="px-4 py-4 text-sm text-textColor whitespace-nowrap"
-                  >Products Managers</td
-                >
-                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                  <div class="flex items-center gap-x-6">
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-emerald-500 focus:outline-none"
-                    >
-                      <Link />
-                    </button>
-
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-yellow-500 focus:outline-none"
-                    >
-                      <Copy />
-                    </button>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td
-                  class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap"
-                >
-                  <div
-                    class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-slate-200"
-                  >
-                    <h2 class="text-sm font-normal text-textColor">WFS</h2>
-                  </div>
-                </td>
-                <td class="px-4 py-4 text-sm text-textColor whitespace-nowrap"
-                  >Products Managers</td
-                >
-                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                  <div class="flex items-center gap-x-6">
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-emerald-500 focus:outline-none"
-                    >
-                      <Link />
-                    </button>
-
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-yellow-500 focus:outline-none"
-                    >
-                      <Copy />
-                    </button>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td
-                  class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap"
-                >
-                  <div
-                    class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-slate-200"
-                  >
-                    <h2 class="text-sm font-normal text-textColor">WFS</h2>
-                  </div>
-                </td>
-                <td class="px-4 py-4 text-sm text-textColor whitespace-nowrap"
-                  >Products Managers</td
-                >
-                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                  <div class="flex items-center gap-x-6">
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-emerald-500 focus:outline-none"
-                    >
-                      <Link />
-                    </button>
-
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-yellow-500 focus:outline-none"
-                    >
-                      <Copy />
-                    </button>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td
-                  class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap"
-                >
-                  <div
-                    class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-slate-200"
-                  >
-                    <h2 class="text-sm font-normal text-textColor">WFS</h2>
-                  </div>
-                </td>
-                <td class="px-4 py-4 text-sm text-textColor whitespace-nowrap"
-                  >Products Managers</td
-                >
-                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                  <div class="flex items-center gap-x-6">
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-emerald-500 focus:outline-none"
-                    >
-                      <Link />
-                    </button>
-
-                    <button
-                      class="text-textColor transition-colors duration-200 hover:text-yellow-500 focus:outline-none"
-                    >
-                      <Copy />
-                    </button>
-                  </div>
-                </td>
-              </tr>
+                          <CopyButton client:load />
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })
+              }
             </tbody>
           </table>
         </div>
