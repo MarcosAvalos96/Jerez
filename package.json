@@ -16,7 +16,7 @@
     "@nextui-org/react": "^2.3.6",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.8.2",
+    "astro": "^4.8.7",
     "astro-navbar": "^2.3.2",
     "framer-motion": "^11.2.0",
     "react": "^18.3.1",

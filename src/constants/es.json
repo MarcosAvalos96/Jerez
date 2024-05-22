@@ -3,6 +3,10 @@
         "title": "Geobint Web",
         "description": "Explora el geoportal del Ayuntamiento de Jerez. Accede a mapas, catálogos y servicios geográficos para impulsar el desarrollo de Jerez."
     },
+    "Cookies": {
+        "body": "Utilizamos Cookies para asegurar la mejor experiencia al usuario en nuestra web. Si sigues utilizando este sitio asumiremos que estás de acuerdo.",
+        "button": "Aceptar"
+    },
     "Navbar": {
         "title": "Ayuntamiento de Jerez",
         "nav1": "Bienvenido al geoportal",
@@ -20,6 +24,63 @@
             "quote": "“Una manera de hacer Europa”"
         }
     },
+    "DirectorioContent": [
+        {
+            "title": "WMS",
+            "body": "",
+            "url": "http://ide.jerez.es:8080/geoserver/Raster/TIFF_MOSAIC/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WMS",
+            "body": "Servicio para la visualización en tiempo real de los aparcamientos públicos en la ciudad de Jerez de la Frontera, mostrando su ubicación y niveles de ocupación.",
+            "url": "http://ide.jerez.es:8080/geoserver/smart_city/parkingview/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WMS",
+            "body": "Polígonos de ordenación detallada del planeamiento vigente",
+            "url": "http://ide.jerez.es:8080/geoserver/Urbanismo/poligono_ordenacion_pgou09/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WMS",
+            "body": "Detalle de la numeración de los portales de los edificios de Jerez de la Frontera.",
+            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/portal/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WMS",
+            "body": "Identificación de los tramos viales urbanos junto con sus nombres.",
+            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/tramo_vial/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WMS",
+            "body": "Red de sensores climáticos urbanos de la ciudad de Jerez de la Frontera que proporcionan datos actualizados sobre temperatura, humedad y presión atmosférica.",
+            "url": "http://ide.jerez.es:8080/geoserver/smart_city/weathersensorview/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WFS",
+            "body": "Servicio para la visualización en tiempo real de los aparcamientos públicos en la ciudad de Jerez de la Frontera, mostrando su ubicación y niveles de ocupación.",
+            "url": "http://ide.jerez.es:8080/geoserver/smart_city/parkingview/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WFS",
+            "body": "Detalle de la numeración de los portales de los edificios de Jerez de la Frontera.",
+            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/portal/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WFS",
+            "body": "Polígonos de ordenación detallada del planeamiento vigente.",
+            "url": "http://ide.jerez.es:8080/geoserver/Urbanismo/poligono_ordenacion_pgou09/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WFS",
+            "body": "Red de sensores climáticos urbanos de la ciudad de Jerez de la Frontera que proporcionan datos actualizados sobre temperatura, humedad y presión atmosférica.",
+            "url": "http://ide.jerez.es:8080/geoserver/smart_city/weathersensorview/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        },
+        {
+            "title": "WFS",
+            "body": "Identificación de los tramos viales urbanos junto con sus nombres.",
+            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/tramo_vial/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+        }
+    ],
     "Maps": {
         "title": "Catálogo de mapas",
         "placeHolder": "Buscar ...",
