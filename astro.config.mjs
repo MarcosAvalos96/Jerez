@@ -6,17 +6,18 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  devToolbar: { enabled: false },
   i18n: {
     defaultLocale: "es",
     locales: ["en", "es"],
     routing: {
-      prefixDefaultLocale: false
+      prefixDefaultLocale: false,
     },
     fallback: {
-      en: "es"
-    }
+      en: "es",
+    },
   },
   integrations: [tailwind(), react()],
   output: "server",
-  adapter: vercel()
+  adapter: vercel(),
 });
