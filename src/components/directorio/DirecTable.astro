@@ -63,7 +63,7 @@ const { DirectorioContent } = i18n;
                         <div class="flex items-center gap-x-6">
                           <IrButton route={tabla.url} client:load />
 
-                          <CopyButton client:load />
+                          <CopyButton textToCopy={tabla.url} client:load />
                         </div>
                       </td>
                     </tr>
