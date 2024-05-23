@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
 interface Props {
-  ruta: string;
+  ruta?: string;
   title: string;
-  body: string;
+  body?: string;
   src: ImageMetadata;
 }
 const { title, body, src, ruta } = Astro.props;

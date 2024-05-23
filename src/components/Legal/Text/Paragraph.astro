@@ -1,0 +1,12 @@
+---
+interface Props {
+  parrafo: string;
+}
+const { parrafo } = Astro.props;
+---
+
+<p
+  class="text-lg text-textColor leading-normal text-pretty tracking-normal py-2 text-justify"
+>
+  {parrafo}
+</p>
