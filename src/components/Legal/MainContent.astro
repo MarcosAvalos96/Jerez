@@ -1,0 +1,31 @@
+---
+import { getI18N } from "@i18n/index";
+import Section from "./Section.astro";
+import Container from "@components/Container.astro";
+import Paragraph from "./Text/Paragraph.astro";
+import SubTitle from "./Text/SubTitle.astro";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { title, Data, intro } = i18n.AvisoLegal;
+---
+
+<Container>
+  <h2 class="text-primary text-center font-bold text-4xl leading-tight py-4">
+    {title}
+  </h2>
+  <p
+    class="text-lg text-textColor leading-normal tracking-normal py-4 text-justify text-pretty"
+  >
+    {intro}
+  </p>
+  <main class="py-4">
+    {
+      Data.map((legal) => (
+        <Section>
+          <SubTitle subT={legal.title} />
+          <Paragraph parrafo={legal.body} />
+        </Section>
+      ))
+    }
+  </main>
+</Container>

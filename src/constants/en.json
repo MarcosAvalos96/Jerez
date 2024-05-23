@@ -92,57 +92,110 @@
         {
             "title": "WMS",
             "body": "",
-            "url": "http://ide.jerez.es:8080/geoserver/Raster/TIFF_MOSAIC/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/Raster/TIFF_MOSAIC/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 5"
         },
         {
             "title": "WMS",
             "body": "Service for real-time visualization of public parking in the city of Jerez de la Frontera, showing their location and occupancy levels.",
-            "url": "http://ide.jerez.es:8080/geoserver/smart_city/parkingview/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/smart_city/parkingview/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 2"
         },
         {
             "title": "WMS",
             "body": "Detailed zoning polygons of the current planning.",
-            "url": "http://ide.jerez.es:8080/geoserver/Urbanismo/poligono_ordenacion_pgou09/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/Urbanismo/poligono_ordenacion_pgou09/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 3"
         },
         {
             "title": "WMS",
             "body": "Detailed numbering of building entrances in Jerez de la Frontera.",
-            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/portal/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/portal/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 3"
         },
         {
             "title": "WMS",
             "body": "Identification of urban road segments along with their names.",
-            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/tramo_vial/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/tramo_vial/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 2"
         },
         {
             "title": "WMS",
             "body": "Network of urban climate sensors in the city of Jerez de la Frontera providing updated data on temperature, humidity, and atmospheric pressure.",
-            "url": "http://ide.jerez.es:8080/geoserver/smart_city/weathersensorview/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/smart_city/weathersensorview/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 5"
         },
         {
             "title": "WFS",
             "body": "Service for real-time visualization of public parking in the city of Jerez de la Frontera, showing their location and occupancy levels.",
-            "url": "http://ide.jerez.es:8080/geoserver/smart_city/parkingview/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/smart_city/parkingview/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 2"
         },
         {
             "title": "WFS",
             "body": "Detailed numbering of building entrances in Jerez de la Frontera.",
-            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/portal/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/portal/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 1"
         },
         {
             "title": "WFS",
             "body": "Detailed zoning polygons of the current planning.",
-            "url": "http://ide.jerez.es:8080/geoserver/Urbanismo/poligono_ordenacion_pgou09/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/Urbanismo/poligono_ordenacion_pgou09/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 6"
         },
         {
             "title": "WFS",
             "body": "Network of urban climate sensors in the city of Jerez de la Frontera providing updated data on temperature, humidity, and atmospheric pressure.",
-            "url": "http://ide.jerez.es:8080/geoserver/smart_city/weathersensorview/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/smart_city/weathersensorview/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 4"
         },
         {
             "title": "WFS",
             "body": "Identification of urban road segments along with their names.",
-            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/tramo_vial/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746"
+            "url": "http://ide.jerez.es:8080/geoserver/SW_GIS/tramo_vial/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&authkey=511kjq0-9bv9-11xl-4b4c-5ppb4fe9f746",
+            "name": "Capa 2"
         }
-    ]
+    ],
+    "AvisoLegal": {
+        "title": "Aviso legal y Política de privacidad",
+        "intro": "El presente aviso legal regula el acceso y uso del Portal de la Infraestructura de Datos Espaciales (IDE), gestionado por el Ayuntamiento de Jerez de la Frontera con CIF P1102000E y domicilio social C/Consistorio, 15 de Jerez de la Frontera CP 11403 (Cádiz).",
+        "Data": [
+            {
+                "title": "Objeto del Portal IDE",
+                "body": "El Portal IDE tiene como objetivo facilitar el acceso a información geoespacial y servicios relacionados, de acuerdo con lo establecido en la Ley 14/2010, de 5 de julio, sobre las infraestructuras y los servicios de información geográfica en España (LISIGE), y en cumplimiento de la Directiva INSPIRE."
+            },
+            {
+                "title": "Propiedad Intelectual e Industrial",
+                "body": "Todos los contenidos del Portal IDE, incluyendo textos, imágenes, diseños, gráficos, software y cualquier otro elemento, están protegidos por derechos de propiedad intelectual e industrial, de los cuales el Ayuntamiento de Jerez de la Frontera es titular o tiene licencia para su uso. Queda prohibida su reproducción, distribución, comunicación pública o transformación sin autorización previa y expresa."
+            },
+            {
+                "title": "Condiciones de Uso",
+                "body": "El usuario se compromete a utilizar el Portal IDE de manera diligente, correcta y lícita, respetando la legislación aplicable y los derechos de propiedad intelectual e industrial. El usuario será responsable de cualquier uso indebido del Portal IDE o de los contenidos a los que acceda a través del mismo."
+            },
+            {
+                "title": "Responsabilidad del Usuario",
+                "body": "La información y los datos proporcionados a través del Portal IDE tienen carácter meramente consultivo y no deben ser considerados como asesoramiento legal, financiero, médico o de cualquier otra índole profesional. El Ayuntamiento de Jerez de la Frontera se exime de toda responsabilidad en cuanto a la exactitud, veracidad, actualidad y completitud de los datos e información aquí contenidos. El uso de esta información es responsabilidad exclusiva del usuario, y el Ayuntamiento de Jerez de la Frontera no será responsable por cualquier daño o perjuicio derivado de la utilización de los datos presentados en este sitio web."
+            },
+            {
+                "title": "Limitación de Responsabilidad",
+                "body": "El Ayuntamiento de Jerez de la Frontera no se hace responsable de los daños o perjuicios que puedan derivarse del acceso o uso del Portal IDE, ni de los problemas técnicos o interrupciones en el servicio. La información proporcionada en el Portal IDE se ofrece de buena fe y se actualiza periódicamente, pero no se garantiza su exactitud, fiabilidad o integridad."
+            },
+            {
+                "title": "Protección de Datos Personales",
+                "body": "El tratamiento de los datos personales recabados a través del Portal IDE se realizará de acuerdo con lo establecido en la normativa vigente en materia de protección de datos. Para más información, consulte nuestra Política de Privacidad."
+            },
+            {
+                "title": "Política de uso de cookies",
+                "body": "Este Sitio Web utiliza cookies técnicas, que son pequeños archivos de información enviados por nuestro servidor al dispositivo del usuario, para realizar funciones esenciales que garantizan el correcto funcionamiento y visualización del sitio. Estas cookies son temporales y su única finalidad es mejorar la experiencia de navegación. Se eliminan automáticamente al finalizar la sesión del usuario y no recopilan ni almacenan datos personales.El usuario puede configurar su navegador para recibir alertas sobre la recepción de cookies y para impedir su instalación en su dispositivo. Consulte las instrucciones específicas de su navegador para obtener más información."
+            },
+            {
+                "title": "Enlaces Externos",
+                "body": "El Portal IDE puede incluir enlaces a sitios web externos de terceros. El Ayuntamiento de Jerez de la Frontera no se hace responsable del contenido, política de privacidad o prácticas de otros sitios web, y el acceso a ellos será bajo la responsabilidad exclusiva del usuario."
+            },
+            {
+                "title": "Legislación Aplicable y Jurisdicción",
+                "body": "El presente aviso legal se rige por la legislación española. Para la resolución de cualquier controversia que pueda surgir en relación con el Portal IDE, las partes se someten a la jurisdicción de los tribunales de Jerez de la Frontera."
+            }
+        ]
+    }
 }

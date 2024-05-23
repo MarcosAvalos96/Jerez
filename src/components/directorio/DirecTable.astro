@@ -2,7 +2,6 @@
 import { getI18N } from "@i18n/index";
 import CopyButton from "./CopyButton";
 import IrButton from "./IrButton";
-import { table } from "node_modules/astro/dist/core/logger/core";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -25,7 +24,14 @@ const { DirectorioContent } = i18n;
                     <span class="md:text-left">Tipo de servicio</span>
                   </button>
                 </th>
-
+                <th
+                  scope="col"
+                  class="px-6 py-3.5 text-sm font-normal text-left rtl:text-right text-textColor"
+                >
+                  <button class="flex items-center gap-x-2">
+                    <span>Titulo</span>
+                  </button>
+                </th>
                 <th
                   scope="col"
                   class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-textColor"
@@ -38,7 +44,12 @@ const { DirectorioContent } = i18n;
                 <th
                   scope="col"
                   class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-textColor"
-                  >URL</th
+                  >Enlace</th
+                >
+                <th
+                  scope="col"
+                  class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-textColor"
+                  >Copiar</th
                 >
               </tr>
             </thead>
@@ -56,15 +67,17 @@ const { DirectorioContent } = i18n;
                           </h2>
                         </div>
                       </td>
+                      <td class="px-4 py-4 text-sm text-textColor text-center lg:text-left">
+                        {tabla.name}
+                      </td>
                       <td class="px-4 py-4 text-sm text-textColor ">
                         {tabla.body}
                       </td>
                       <td class="px-4 py-4 text-sm whitespace-nowrap">
-                        <div class="flex items-center gap-x-6">
-                          <IrButton route={tabla.url} client:load />
-
-                          <CopyButton textToCopy={tabla.url} client:load />
-                        </div>
+                        <IrButton route={tabla.url} client:load />
+                      </td>
+                      <td class="px-4 py-4 text-sm whitespace-nowrap">
+                        <CopyButton textToCopy={tabla.url} client:load />
                       </td>
                     </tr>
                   );

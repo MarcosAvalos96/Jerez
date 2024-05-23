@@ -1,0 +1,20 @@
+---
+import Trabajando from "@components/common/Trabajando.astro";
+import Layout from "@layouts/Layout.astro";
+import { getI18N } from "@i18n/index";
+import Container from "@components/Container.astro";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { title, description } = i18n.SEO;
+---
+
+<Layout title={title} description={description}>
+  <Container>
+    <h2
+      class="text-primary text-center font-bold text-4xl leading-tight py-4 md:text-left"
+    >
+      Manuales
+    </h2>
+    <Trabajando />
+  </Container>
+</Layout>

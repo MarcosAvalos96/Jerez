@@ -1,6 +1,16 @@
 ---
 import Container from "@components/Container.astro";
-import Files from "./Files.astro";
+import Card from "@components/home/Card.astro";
+import Img1 from "@assets/images/Docs/1.webp";
+import Img2 from "@assets/images/Docs/2.webp";
+import Img3 from "@assets/images/Docs/3.webp";
+import { getI18N } from "@i18n/index";
+import { getLangFromUrl, useTranslatedPath } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <Container className=" py-4">
@@ -11,17 +21,23 @@ import Files from "./Files.astro";
   </h2>
   <main class="p-4">
     <section
-      class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 rounded-xl p-6"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 rounded-xl p-6"
     >
-      <Files />
-      <Files />
-      <Files />
-      <Files />
-      <Files />
-      <Files />
-      <Files />
-      <Files />
-      <Files />
+      <Card
+        title={"Documentos"}
+        src={Img1}
+        ruta={translatePath("/DOC/documentos")}
+      />
+      <Card
+        title={"Manuales"}
+        src={Img2}
+        ruta={translatePath("/DOC/manuales")}
+      />
+      <Card
+        title={"Preguntas Frecuentes"}
+        src={Img3}
+        ruta={translatePath("/DOC/faq")}
+      />
     </section>
   </main>
 </Container>
