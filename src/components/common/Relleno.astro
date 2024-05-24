@@ -1,0 +1,12 @@
+---
+import { getI18N } from "@i18n/index";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { title, body } = i18n.Rellano;
+---
+
+<div class="py-2 px-4 mx-auto text-justify p-2 rounded-lg mb-2">
+  <h6 class="text-xl font-semibold">{title}</h6>
+  <p class="text-lg">{body}</p>
+</div>
