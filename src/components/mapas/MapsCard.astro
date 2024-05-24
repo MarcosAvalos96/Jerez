@@ -10,10 +10,10 @@ const { title, subTitle, imageName } = Astro.props;
 
 <section class="shadow-sm duration-300 hover:shadow-md">
   <article
-    class="aspect-video max-w-xl w-full rounded-sm text-gray-100 bg-cover bg-center"
+    class="aspect-video bg-orange-600 max-w-xl w-full rounded-sm text-gray-100 bg-cover bg-center"
     style={`background-image: url(/src/assets/images/Maps/${imageName}.webp); `}
   >
-    <div class="bg-Azul bg-opacity-30 p-6 rounded-sm h-full">
+    <div class="bg-black bg-opacity-20 p-6 rounded-sm h-full">
       <h1 class="text-3xl text-gray-100 text-center font-extrabold">
         {title}
       </h1>
@@ -21,12 +21,7 @@ const { title, subTitle, imageName } = Astro.props;
         <span class="text-md">{subTitle}</span>
       </div>
       <div class="bottom-0 left-0 flex justify-end">
-        <a
-          class="p-1 bg-SoftBlue"
-          href="#"
-          target="_blank"
-          aria-label="Shared Button"
-        >
+        <a class="p-1" href="#" target="_blank" aria-label="Shared Button">
           <ShareButton />
         </a>
       </div>
