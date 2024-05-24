@@ -157,7 +157,7 @@
     }
   },
   "AvisoLegal": {
-    "title": "Aviso legal y Política de privacidad",
+    "title": "AVISO LEGAL - PORTAL DE LA INFRAESTRUCTURA DE DATOS ESPACIALES (IDE)",
     "intro": "El presente aviso legal regula el acceso y uso del Portal de la Infraestructura de Datos Espaciales (IDE), gestionado por el Ayuntamiento de Jerez de la Frontera con CIF P1102000E y domicilio social C/Consistorio, 15 de Jerez de la Frontera CP 11403 (Cádiz).",
     "Data": [
       {
@@ -166,7 +166,7 @@
       },
       {
         "title": "Propiedad Intelectual e Industrial",
-        "body": "Todos los contenidos del Portal IDE, incluyendo textos, imágenes, diseños, gráficos, software y cualquier otro elemento, están protegidos por derechos de propiedad intelectual e industrial, de los cuales el Ayuntamiento de Jerez de la Frontera es titular o tiene licencia para su uso. Queda prohibida su reproducción, distribución, comunicación pública o transformación sin autorización previa y expresa."
+        "body": "Todos los contenidos del Portal IDE, incluyendo, pero sin limitar, textos, imágenes, diseños, gráficos, software y cualquier otro elemento, están protegidos por derechos de propiedad intelectual e industrial, de los cuales el Ayuntamiento de Jerez de la Frontera es titular o tiene licencia para su uso. Queda prohibida su reproducción, distribución, comunicación pública o transformación sin autorización previa y expresa."
       },
       {
         "title": "Condiciones de Uso",
@@ -174,7 +174,7 @@
       },
       {
         "title": "Responsabilidad del Usuario",
-        "body": "La información y los datos proporcionados a través del Portal IDE tienen carácter meramente consultivo y no deben ser considerados como asesoramiento legal, financiero, médico o de cualquier otra índole profesional. El Ayuntamiento de Jerez de la Frontera se exime de toda responsabilidad en cuanto a la exactitud, veracidad, actualidad y completitud de los datos e información aquí contenidos. El uso de esta información es responsabilidad exclusiva del usuario, y el Ayuntamiento de Jerez de la Frontera no será responsable por cualquier daño o perjuicio derivado de la utilización de los datos presentados en este sitio web."
+        "body": "La información y los datos proporcionados a través del Portal IDE tienen carácter meramente consultivo y no deben ser considerados como asesoramiento de cualquier índole profesional. El Ayuntamiento de Jerez de la Frontera se exime de toda responsabilidad en cuanto a la exactitud, veracidad, actualidad y completitud de los datos e información aquí contenidos. El uso de esta información es responsabilidad exclusiva del usuario y el Ayuntamiento de Jerez de la Frontera no será responsable por cualquier daño o perjuicio derivado de la utilización de los datos o información presentados."
       },
       {
         "title": "Limitación de Responsabilidad",
@@ -182,24 +182,444 @@
       },
       {
         "title": "Protección de Datos Personales",
-        "body": "El tratamiento de los datos personales recabados a través del Portal IDE se realizará de acuerdo con lo establecido en la normativa vigente en materia de protección de datos. Para más información, consulte nuestra Política de Privacidad."
+        "body": "El tratamiento de los datos personales que se pudieran recabar a través del Portal IDE se realizará de acuerdo con lo establecido en la normativa vigente en materia de protección de datos según Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
       },
       {
         "title": "Política de uso de cookies",
-        "body": "Este Sitio Web utiliza cookies técnicas, que son pequeños archivos de información enviados por nuestro servidor al dispositivo del usuario, para realizar funciones esenciales que garantizan el correcto funcionamiento y visualización del sitio. Estas cookies son temporales y su única finalidad es mejorar la experiencia de navegación. Se eliminan automáticamente al finalizar la sesión del usuario y no recopilan ni almacenan datos personales.El usuario puede configurar su navegador para recibir alertas sobre la recepción de cookies y para impedir su instalación en su dispositivo. Consulte las instrucciones específicas de su navegador para obtener más información."
+        "body": "Este Sitio Web utiliza cookies técnicas, que son pequeños archivos de información enviados por el servidor al dispositivo del usuario, para realizar funciones esenciales que permiten el correcto funcionamiento y visualización del sitio. Estas cookies son temporales y su única finalidad es mejorar la experiencia de navegación. Se eliminan automáticamente al finalizar la sesión del usuario y no recopilan ni almacenan datos personales. El usuario puede configurar su navegador para recibir alertas sobre la recepción de cookies y para impedir su instalación en su dispositivo. Consulte las instrucciones específicas de su navegador para obtener más información."
       },
       {
         "title": "Enlaces Externos",
         "body": "El Portal IDE puede incluir enlaces a sitios web externos de terceros. El Ayuntamiento de Jerez de la Frontera no se hace responsable del contenido, política de privacidad o prácticas de otros sitios web, y el acceso a ellos será bajo la responsabilidad exclusiva del usuario."
       },
       {
-        "title": "Legislación Aplicable y Jurisdicción",
-        "body": "El presente aviso legal se rige por la legislación española. Para la resolución de cualquier controversia que pueda surgir en relación con el Portal IDE, las partes se someten a la jurisdicción de los tribunales de Jerez de la Frontera."
+        "title": "Legislación Aplicable",
+        "body": "El presente aviso legal se rige por la legislación española. Para la resolución de cualquier controversia que pueda surgir en relación con el Portal IDE estamos a su disposición en el Ayuntamiento de Jerez de la Frontera."
       }
     ]
   },
   "Rellano": {
     "title": "Lorem ipsum dolor sit amet, consectetur",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  "FAQ": {
+    "title": "Preguntas Frecuentes",
+    "Data": [
+      {
+        "title": "¿Qué es y para qué sirve el Geoportal?",
+        "body": "El Geoportal es una solución tecnológica de infraestructura de datos espaciales (IDE). Este sistema permite buscar, visualizar y consultar datos geoespaciales integrados en un mapa. Una de sus principales características es que está basada en los estándares de servicios de la OGC (Open Geospatial Consortium), lo que permite integrar múltiples fuentes de datos (WFS, CSW, WMS, WMTS y TMS) en un mismo mapa, haciéndolo sencilla su usabilidad por el usuario.",
+        "body2": "La solución es accesible desde los navegadores más populares del mercado y puede ser utilizado en dispositivos móviles que tengan conectividad."
+      },
+      {
+        "title": "¿Cómo se accede al Geoportal?",
+        "ul": {
+          "list": [
+            {
+              "1st": "Abrir el navegador. Utilizar cualquier navegador web como Chrome, Firefox, Safari o Edge.",
+              "2nd": "Escribir el enlace. Ingresar la dirección web en la barra de direcciones en la parte superior del navegador. El enlace a escribir es: https://ide.jerez.es",
+              "3rd": "Presionar la tecla <Enter>: Una vez que se haya ingresado el enlace en el navegador, presione la tecla <Enter> en el teclado.",
+              "4th": "Esperar la imagen inicial: En unos segundos, se podrá observar la página de inicio y ya se podrá comenzar a navegar.",
+              "5th": "Explorar el Contenido: Desde la página de inicio, se puede acceder a diferentes secciones haciendo clic en los enlaces del menú de navegación."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Se Necesita estar registrado o tener una cuenta de usuario para acceder al Geoportal?",
+        "body": "No se requiere estar registrado ni tener una cuenta de usuario para acceder al Geoportal para acceder al contenido público. El Geoportal permite a los usuarios navegar y consultar la información disponible sin necesidad de realizar ningún proceso de registro o inicio de sesión. Esto facilita el acceso a los datos y recursos que ofrece, promoviendo un uso más libre y accesible de la información."
+      },
+      {
+        "title": "¿Cómo iniciar sesión en Geobint web?",
+        "body": "Para acceso a información que no es pública, desde la pantalla inicial de Geobint web, diríjase al menú superior derecho y hacer clic en el botón iniciar sesión.",
+        "body2": "Se abrirá una ventana donde se deberá introducir el nombre de usuario y contraseña. Después de ingresar la información requerida, hacer clic en el botón Login para acceder a la cuenta."
+      },
+      {
+        "title": "¿Cómo cambiar el idioma de la interfaz?",
+        "body": "Para cambiar el idioma de la interfaz, dirigirse al menú superior derecho y hacer clic en el primer botón de la izquierda y se desplegará un menú que posibilitará cambiar el idioma. Al seleccionar el idioma deseado la interfaz se actualizará con el nuevo idioma seleccionado."
+      },
+      {
+        "title": "¿Cómo se busca un mapa?",
+        "body": "Dentro de la sección Visor de mapas aparece una barra de búsqueda. Aquí podrás escribir el término requerido en la caja de texto. A continuación, presione la tecla <Enter> en el teclado o haga clic en el botón de búsqueda para iniciar la búsqueda del mapa deseado."
+      },
+      {
+        "title": "¿Cómo identificar mi posición aproximada en el mapa?",
+        "ul": {
+          "title": "Para identificar su posición aproximada en el mapa debe de seguir los siguientes pasos:",
+          "list": [
+            {
+              "1st": "Presionar el primer botón de la barra de navegación: Este botón solicita permisos a través del navegador para acceder a su ubicación.",
+              "2nd": "Visualizar su ubicación en el mapa: Una vez concedidos los permisos, en el mapa se mostrará su ubicación aproximada con un punto. Si la precisión es baja, también aparecerá un círculo semitransparente que indica el área dentro de la cual se encuentra."
+            }
+          ],
+          "endList": "Nota: En dispositivos no móviles (como ordenadores de escritorio o portátiles) que no tienen sistema de posicionamiento (GPS), la ubicación se determina a partir de la conexión a internet."
+        }
+      },
+      {
+        "title": "¿Cómo desplazarse dentro del mapa?",
+        "body": "Esta función permite explorar diferentes áreas del mapa de manera fácil y fluida.",
+        "ul": {
+          "title": "Para desplazarse dentro del mapa debe de seguir los siguientes pasos:",
+          "list": [
+            {
+              "1st": "Hacer clic en cualquier parte del mapa.",
+              "2nd": "Mantener presionado el botón del ratón externo o ratón integrado en su ordenador (touchpad).",
+              "3rd": "Arrastrar el mapa en la dirección deseada: Puede moverse horizontal o verticalmente manteniendo el clic y desplazándose en la dirección se prefieras."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo se puede acercar y alejar el mapa?",
+        "ul": {
+          "title": "Cambiar la extensión de visualización del mapa se realiza mediante el zoom.",
+          "list": [
+            {
+              "1st": "Opción 1. Mediante la rueda del ratón: Colocar el puntero sobre el mapa y girar la rueda del ratón hacia adelante para acercar y hacia atrás para alejar.",
+              "2nd": "Opción 2. Utilizar los botones de zoom: En la parte inferior izquierda de la barra de navegación, encontrará los botones + y -. Hacer clic en + para acercar y en - para alejar."
+            }
+          ],
+          "endList": "Ambas opciones permiten ajustar fácilmente el nivel de detalle y la extensión del área que se desea visualizar en el mapa."
+        }
+      },
+      {
+        "title": "¿Cómo se puede visualizar el mapa a pantalla completa?",
+        "body": "Esta función te ofrece una experiencia de visualización más inmersiva y cómoda al maximizar el espacio disponible para la visualización del mapa.",
+        "ul": {
+          "title": "Para visualizar el mapa a pantalla completa se deben de seguir los siguientes pasos:",
+          "list": [
+            {
+              "1st": "Oprimir el botón Pantalla Completa: Este botón se encuentra en la barra de navegación.",
+              "2nd": "Cambiar el modo de visualización: Al presionar el botón, el mapa se desplegará en modo de pantalla completa, permitiéndote una vista más amplia del área seleccionada."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo activar la función de recorrido?",
+        "body": "Esta función permite moverse fácilmente a través del mapa, facilitando la exploración de diferentes áreas del Geoportal de manera eficiente.",
+        "ul": {
+          "title": "Para activar la función de recorrido:",
+          "list": [
+            {
+              "1st": "Hacer clic en el botón <Ir hacia atrás> o <Ir hacia delante>: Estos botones están disponibles en la barra de navegación.",
+              "2nd": "Navegar por el mapa: Utilice estos botones para poder desplazarse de manera más precisa según sus necesidades de búsqueda."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Como configurar la escala gráfica o numérica del mapa?",
+        "body": "Estas herramientas permiten tener un control preciso sobre la escala del mapa, lo que facilita la interpretación de las distancias.",
+        "ul": {
+          "title": "Para configurar la escala gráfica y numérica del mapa:",
+          "list": [
+            {
+              "1st": "Ubicar las herramientas de escala: Estas se encuentran en la parte inferior izquierda del mapa.",
+              "2nd": "Seguir la escala gráfica: La escala gráfica se ajusta automáticamente según la vista actual del mapa, proporcionando una referencia visual del tamaño de las distancias en el mapa.",
+              "3rd": "Ajustar la escala numérica: Utilice la escala numérica para cambiar la escala del mapa deseada. Se puede acercar o alejar la vista del mapa según la selección de la escala numérica que se realice."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo se puede consultar las coordenadas de una ubicación?",
+        "body": "Esta función brinda la capacidad de visualizar las coordenadas de manera flexible, adaptándose a sus necesidades y preferencias.",
+        "ul": {
+          "title": "Para desplegar las coordenadas de la posición relativa del ratón en función del sistema de coordenadas se deben seguir los siguientes pasos:",
+          "list": [
+            {
+              "1st": "Hacer clic en el botón <Mostrar/Ocultar las coordenadas>: Este botón se encuentra en la interfaz y habilita la función de visualización de coordenadas.",
+              "2nd": "Visualizar las coordenadas del puntero: Después de activar esta función, las coordenadas de la ubicación del puntero se mostrarán en la interfaz.",
+              "3rd": "Seleccionar el sistema de coordenadas deseado: En el lado derecho, se podrá elegir el sistema de coordenadas que se prefiera según los disponibles. Por defecto, se visualizan las coordenadas según World Geodetic System 1984 (WGS84)."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo cambiar la cartografía base del mapa?",
+        "body": "Cambiar la capa base del mapa permite ajustar la apariencia y el estilo visual del mapa según tus preferencias o necesidades específicas.",
+        "ul": {
+          "title": "Para cambiar la capa base o cartografía del mapa:",
+          "list": [
+            {
+              "1st": "Hacer clic en el botón ubicado en la esquina inferior izquierda: Este botón desplegará varias miniaturas de diferentes opciones de mapas base.",
+              "2nd": "Seleccionar la capa base deseada: Entre las miniaturas mostradas, elegir la que se prefiera para cambiar el fondo del mapa.",
+              "3rd": "Confirmar la selección: Una vez seleccionada la nueva capa base, el fondo del mapa se actualizará automáticamente para reflejar la capa elegida."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Dónde se encuentran las herramientas del mapa?",
+        "body": "Las herramientas principales para el usuario se encuentran en el panel lateral derecho."
+      },
+      {
+        "title": "¿Cuáles son y para qué sirven las herramientas del mapa?",
+        "ul": {
+          "title": "Las herramientas del mapa y sus funciones son las siguientes:",
+          "list": [
+            {
+              "1st": "Regresar a inicio: Al hacer clic en el botón Volver a la página de inicio, se retorna a la página principal del mapa.",
+              "2nd": "Exportar el mapa: Al hacer clic en el botón Exportar el mapa, se abre una ventana donde puedes seleccionar el formato admitido (WMC). Posteriormente, al presionar el botón Exportar, se descarga el archivo.",
+              "3rd": "Realizar mediciones: Al hacer clic en este botón, se activa la herramienta de mediciones que te permite medir distancias, áreas y azimuts en el mapa."
+            }
+          ],
+          "endList": "Estas herramientas facilitan diferentes funciones dentro del mapa, desde la gestión de la sesión del usuario hasta la exportación de datos y la realización de mediciones para análisis adicionales."
+        }
+      },
+      {
+        "title": "¿Dónde encontrar el catálogo de servicios y cuál es su función?",
+        "body": "El catálogo proporciona acceso a una variedad de servicios y datos que enriquecen la experiencia de navegación y análisis en el mapa.",
+        "ul": {
+          "title": "Para acceder al catálogo y utilizar sus funciones:",
+          "list": [
+            {
+              "1st": "Abrir el panel lateral derecho Herramientas del mapa: Dentro de este panel, se podrá visualizar una opción identificada como Catálogo.",
+              "2nd": "Hacer clic en la opción Catálogo: Al seleccionar esta opción, se abrirá el catálogo.",
+              "3rd": "Utilizar el catálogo para buscar servicios y datos: El catálogo es una herramienta central donde se pueden buscar servicios, extraer datos geoespaciales y agregarlos al mapa según sus necesidades."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo agregar nuevos servicios al catálogo?",
+        "body": "Esta función permite consultar y agregar diferentes servicios de web mapping al mapa, facilitando la integración de datos geoespaciales.",
+        "ul": {
+          "title": "Para agregar servicios acceda al catálogo y realice los siguientes pasos:",
+          "list": [
+            {
+              "1st": "Hacer clic en el botón (+): Este botón se encuentra en la parte lateral derecha de la barra de búsqueda de servicios en el catálogo.",
+              "2nd": "Seleccionar el tipo de servicio: En la configuración Tipo, hacer clic en la flecha para desplegar y seleccionar el formato soportado (CSW, WMS, WMTS, TMS, WFS, 3D Tiles)."
+            }
+          ],
+          "title2": "Ingresar el título y el enlace del servicio:",
+          "list2": [
+            {
+              "1st": "Título: Escribir el nombre que se desea asignar al servicio en el cuadro de texto.",
+              "2nd": "URL: Introducir la dirección o enlace del servicio."
+            }
+          ],
+          "title3": "Guardar la configuración: Una vez completados estos campos, hacer clic en Guardar. Verificar el servicio: El sistema evaluará la dirección y el estado del servicio. Según el resultado, aparecerá un mensaje en el centro de la pantalla:",
+          "list3": [
+            {
+              "1st": "Éxito: Servicio añadido correctamente.",
+              "2nd": "Aviso: Servicio no disponible. Por favor compruebe la URL seleccionada."
+            }
+          ],
+          "title4": "Para configuraciones avanzadas:",
+          "list4": [
+            {
+              "1st": "Hacer clic en el ícono del lápiz (edición) en la ventana de catálogo.",
+              "2nd": "Hacer clic en la flecha azul Ajustes avanzados. *Las configuraciones avanzadas varían según el tipo de servicio seleccionado."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo se puede interactuar y agregar capas al mapa?",
+        "ul": {
+          "title": "Para agregar capas al mapa:",
+          "list": [
+            {
+              "1st": "Pulsar el botón Añadir al mapa: Este botón está ubicado en la parte lateral derecha de los servicios en el catálogo. Al pulsar el botón, la capa se añadirá al mapa.",
+              "2nd": "Desplegar el menú de capas: Para ver y gestionar las capas añadidas, oprimir el botón 'Capas' ubicado en la esquina superior izquierda del mapa."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo se puede alternar la visibilidad de las capas?",
+        "body": "El Geoportal permite gestionar la visibilidad de las capas de manera eficiente, facilitando el control sobre la información que se muestra en el mapa en cada momento.",
+        "ul": {
+          "title": "Para alternar la visibilidad de las capas:",
+          "list": [
+            {
+              "1st": "Acceder al menú de capas: Abrir el menú de capas presionando el botón Capas en la esquina superior izquierda del mapa.",
+              "2nd": "Modificar el estado de visibilidad: Haga clic en el ícono con una figura de un ojo ubicado a la izquierda del nombre de cada capa. Este ícono permite alternar entre los estados de visible y oculto.",
+              "3rd": "Ajustar la transparencia de la capa: Mover el control deslizante asociado a cada capa para modificar su nivel de transparencia."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo se muestra la leyenda de estilo?",
+        "body": "El Geoportal proporciona información detallada sobre la simbología asociada a cada capa, ayudándote a interpretar correctamente los datos visualizados en el mapa.",
+        "ul": {
+          "list": [
+            {
+              "1st": "Acceder a la capa deseada: En el menú de capas, ubica la capa para la cual se desea ver la simbología.",
+              "2nd": "Oprimir la flecha orientada a la izquierda: Esta flecha está situada junto al nombre de la capa.",
+              "3rd": "Visualizar la leyenda de estilo: Al presionar la flecha, se desplegará la simbología utilizada en la capa en la parte inferior."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo cambiar el orden de la visualización de capas?",
+        "body": "Esta función es útil cuando las capas se superponen o se necesita dar prioridad a ciertas capas, permitiendo una visualización más clara y organizada de los datos en el mapa.",
+        "ul": {
+          "title": "Para cambiar el orden de la visualización de capas y/o grupos:",
+          "list": [
+            {
+              "1st": "Acceder al menú de capas: Abrir el menú de capas en la esquina superior izquierda del mapa.",
+              "2nd": "Reorganizar las capas: Hacer clic y mantener presionado sobre la capa que se desea mover.",
+              "3rd": "Arrastrar la capa a la posición deseada: Arrastrar la capa hacia arriba o hacia abajo para cambiar su posición jerárquica."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo acceder a la función de búsqueda de capas?",
+        "body": "En la parte superior de la sección capas se encuentra un cuadro de texto que permite iniciar la búsqueda de capas. No desactiva las capas, solamente busca y señala la que coincida con el término. Para deshacer la búsqueda, se puede borrar el texto u oprimir el botón Quitar filtro."
+      },
+      {
+        "title": "¿Cómo puedo hacer zoom a la extensión de la capa?",
+        "ul": {
+          "title": "Para hacer zoom a la extensión de la capa:",
+          "list": [
+            {
+              "1st": "Seleccionar la capa: Primero, acceder al menú de capas en la esquina superior izquierda del mapa y selecciona la capa específica sobre la cual se quiere realizar zoom.",
+              "2nd": "Hacer clic en el ícono de la lupa: Una vez seleccionada la capa, aparecerá la barra de herramientas en la parte superior donde se ubicará el ícono con el símbolo de una lupa. Hacer clic en este ícono.",
+              "3rd": "Visualizar la capa completa: Al hacer clic en el ícono de la lupa, el mapa hará zoom automáticamente para mostrar toda la extensión de la capa seleccionada."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo acceder a la configuración de capa y cuáles son los parámetros disponibles?",
+        "ul": {
+          "title": "Para acceder a la configuración de capa y ajustar sus parámetros disponibles:",
+          "list": [
+            {
+              "1st": "Seleccionar la capa: Primero, acceder al menú de capas en la esquina superior izquierda del mapa y seleccionar la capa cuya configuración desea modificar.",
+              "2nd": "Hacer clic en el ícono de la llave inglesa: Una vez seleccionada la capa, hacer clic en el ícono de la llave inglesa, en el segundo ícono en la barra de herramientas de capa."
+            }
+          ],
+          "title2": "Explorar las pestañas del menú desplegable:",
+          "list2": [
+            {
+              "1st": "General: Aquí se puede modificar el título de la capa, configurar el título para diferentes idiomas, ajustar el nombre y la descripción de la capa, así como cambiar su ubicación dentro del grupo. Así mismo, se puede configurar los datos que aparecen cuando nos posicionamos sobre la capa. Estas modificaciones son específicas para su mapa y no afectan las capas proporcionadas por el servidor.",
+              "2nd": "Visualización: En esta pestaña, se puede ajustar los parámetros de visualización de la capa, como el formato de imagen, tamaño, opacidad y visibilidad en función de la escala de visualización. También para configurar el tamaño de la leyenda.",
+              "3rd": "Estilo: Permite seleccionar y aplicar un estilo de la lista a la capa. Esta función está disponible solo para las capas cargadas desde un servidor externo y puede requerir la inclusión de datos de autenticación del servidor. La disponibilidad de esta ventana varía según el perfil de usuario, ya que la edición puede estar habilitada de forma diferente para distintos usuarios.",
+              "4th": "Información: Esta pestaña cuenta con cinco secciones: Desactivar identificación, Texto, HTML, Propiedades y Plantilla. Cada sección proporciona opciones adicionales para ajustar la información y el comportamiento de la capa en el mapa."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo se puedo filtrar la capa?",
+        "EndL": "Estas opciones permiten aplicar filtros personalizados a la capa para mostrar únicamente los datos que cumplen con ciertos criterios, lo que facilita el análisis y la visualización de información específica en el mapa.",
+        "ul": {
+          "title": "Para filtrar la capa:",
+          "list": [
+            {
+              "1st": "Seleccionar la capa: Primero, acceder al menú de capas en la esquina superior izquierda del mapa y seleccionar la capa que se requiere filtrar.",
+              "2nd": "Acceder al menú de filtros: Hacer clic en el botón correspondiente en la barra de herramientas de capa. Esto desplegará la ventana de filtro."
+            }
+          ],
+          "title2": "Explorar las opciones de filtrado:",
+          "list2": [
+            {
+              "1st": "Filtrar por atributo: Acceder a las opciones de filtrado basadas en atributos específicos de los datos de la capa.",
+              "2nd": "Combina los filtros: Se puede combinar diferentes criterios de filtrado para ajustar aún más los resultados según tus necesidades."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo se puede visualizar la tabla de atributos?",
+        "ul": {
+          "title": "Para visualizar la tabla de atributos:",
+          "list": [
+            {
+              "1st": "Seleccionar la capa: Primero, acceder al menú de capas en la esquina superior izquierda del mapa y seleccionar la capa cuyos atributos desea visualizar.",
+              "2nd": "Acceder a la tabla de atributos: Hacer clic en el botón correspondiente en la barra de herramientas. Esto desplegará una tabla que muestra todos los atributos de la capa."
+            }
+          ],
+          "title2": "Explorar las funciones de la tabla:",
+          "list2": [
+            {
+              "1st": "Filtrar datos: Se pueden filtrar los datos escribiendo valores iguales en los espacios en blanco en la parte superior de la tabla.",
+              "2nd": "Desplazamiento vertical: Utilizar la rueda del ratón o arrastra la barra lateral para desplazarse verticalmente por la tabla.",
+              "3rd": "Desplazamiento horizontal: Utilizar la barra inferior para desplazarse horizontalmente por la tabla.",
+              "4th": "Ajustar del tamaño de la tabla: Se puede ampliar la vista de la tabla verticalmente arrastrando el borde superior hacia la dirección deseada."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo borrar una capa?",
+        "EndL": "NOTA: Es importante tener en cuenta que esta acción es irreversible, debe confirmar la eliminación solo cuando esté seguro que se desea eliminar la capa.",
+        "ul": {
+          "title": "Para borrar una capa:",
+          "list": [
+            {
+              "1st": "Seleccionar la capa: Primero, acceder al menú de capas en la esquina superior izquierda del mapa y después seleccionar la capa que se desea eliminar.",
+              "2nd": "Acceder a la opción de eliminación: Haga clic en el ícono con la figura de cubo de basura correspondiente a la capa seleccionada.",
+              "3rd": "Confirmar la eliminación: Se desplegará una ventana de confirmación. Para confirmar la eliminación, haga clic en el botón Borrar."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Qué son los widgets y cómo se utilizan en el sistema de mapas?",
+        "body": "Los widgets son componentes que permiten describir y visualizar los datos de las capas de manera cualitativa y cuantitativa, utilizando recursos gráficos, textos, tablas y contadores.",
+        "EndL": "Una vez seleccionado el tipo de widget, podrá configurar su contenido y apariencia de acuerdo a las necesidades específicas. Los widgets permiten presentar y analizar los datos de manera interactiva y visualmente atractiva en el mapa.",
+        "ul": {
+          "title": "Para generar widgets y seleccionar su tipo, seguir los siguientes pasos:",
+          "list": [
+            {
+              "1st": "Seleccionar la capa: Primero, acceder al menú de capas en la esquina superior izquierda del mapa y posteriormente seleccionar la capa sobre la cual se van a generar widget.",
+              "2nd": "Acceder al panel de creación de widgets: Haga clic en el botón correspondiente para acceder al panel de creación de widgets.",
+              "3rd": "Seleccionar el tipo de widget: En el panel de creación de widgets, elegir el tipo de widget que desea generar. Los tipos disponibles son: gráfico, texto, tabla, contador"
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Cómo descargar la capa y qué opciones se presentan para el formato de exportación?",
+        "EndL": "Siguiendo los pasos anteriores, se podrá descargar los datos de la capa seleccionada en el formato y sistema de referencia deseados para su uso posterior.",
+        "ul": {
+          "title": "Para descargar una capa en el sistema de mapas:",
+          "list": [
+            {
+              "1st": "Seleccionar la capa: Primero, en la interfaz del sistema de mapas, seleccionar la capa que se desea descargar.",
+              "2nd": "Acceder al botón de descarga: Una vez seleccionada la capa, hacer clic en el botón correspondiente en la interfaz del sistema. Esto desplegará una ventana de opciones para la descarga de datos.",
+              "3rd": "Seleccionar el formato de exportación: la primera sección de la ventana, elegir el formato en el cual se desea exportar los datos. Las opciones disponibles pueden incluir GML2, Shapefile, GeoJSON, KML, CSW, GML3.1 o GML3.2.",
+              "4th": "Seleccionar el sistema de referencia: En la segunda sección de la ventana, elegir el sistema de referencia en el cual se requiere exportar los datos.",
+              "5th": "Descargar los datos: Finalmente, hacer clic en el botón de descarga correspondiente en la ventana para iniciar la descarga de los datos de la capa en el formato y sistema de referencia seleccionados."
+            }
+          ]
+        }
+      },
+      {
+        "title": "¿Para qué sirven y cuáles son las herramientas de comparación de capas?",
+        "body": "Las herramientas de comparación de capas tienen como propósito facilitar las comparaciones visuales entre diferentes estados de la capa. Por defecto, estas herramientas están configuradas para utilizar un formato de deslizamiento vertical, aunque también es posible ajustarlo para que funcione en sentido horizontal. Además de esta función, también se incluye la herramienta de Lupa, identificada en el menú como vidrio espía."
+      },
+      {
+        "title": "¿Cuál es la función de los grupos de capas en el sistema de mapas y cómo se pueden utilizar para organizar y gestionar eficientemente las capas?",
+        "body": "Los grupos de capas en el sistema de mapas son una función adicional que facilita la gestión y organización de las capas, permitiendo al usuario clasificarlas según sus preferencias. Para agregar capas a un grupo, éstas deben estar previamente añadidas al mapa y disponibles en el panel de Menú de Capas. Una vez cumplidos estos requisitos, se pueden agregar al grupo manteniendo presionado el botón izquierdo del ratón sobre la capa que se desea mover y posteriormente arrastrándola hacia el grupo deseado. Una vez cerca del grupo, la capa se añadirá en la parte inferior con una sangría.",
+        "body2": " Las funciones disponibles dentro de la agrupación de capas incluyen alternar la visibilidad de las capas agrupadas, cambiar el orden de visualización de las capas dentro del grupo, anidar grupos dentro de otros grupos, borrar capas o subgrupos de la visualización, expandir o contraer grupos para mostrar u ocultar sus capas, y realizar un zoom a la extensión de las capas dentro del grupo. Estas funciones proporcionan una mayor flexibilidad y organización en la gestión de las capas en el sistema de mapas."
+      },
+      {
+        "title": "¿Cómo se obtiene información puntual de la capa?",
+        "body": "Al hacer clic sobre un elemento dibujado en el mapa, el sistema posicionará una marca de ubicación y desplegará en el lado derecho el panel de información de la capa correspondiente. Esta marca se posiciona de acuerdo a la posición geográfica detectada por el ratón. Es importante tener en cuenta que, a mayor nivel de zoom en el mapa, mayor precisión se tendrá en la ubicación de la marca, y viceversa."
+      },
+      {
+        "title": "¿Qué es y qué funciones incluye el Panel de información de capa?",
+        "body": "El Panel de información de capa es una herramienta fundamental que proporciona acceso inmediato a la información desplegada en el sistema de mapas.",
+        "ul": {
+          "title": "Incluye varias funciones importantes:",
+          "list": [
+            {
+              "1st": "Selector de capas y coordenadas: Permite seleccionar la capa de interés y visualizar las coordenadas de la ubicación actual en el mapa.",
+              "2nd": "Configuración del formato de visualización: Permite configurar el formato de visualización del elemento seleccionado en el mapa. Puede mostrar la información de la capa en modo texto sin formato, útil para grandes volúmenes de datos, o en formato HTML para facilitar comparativas y visualización más detallada.",
+              "3rd": "Modo texto: Muestra los resultados de información de la capa como texto sin formato o en formato HTML, según la configuración seleccionada.",
+              "4th": "Panel de propiedades: Muestra los resultados de información de la capa en una lista de propiedades más estilizada, lo que facilita la visualización y comprensión de la información."
+            }
+          ]
+        }
+      }
+    ]
   }
 }
