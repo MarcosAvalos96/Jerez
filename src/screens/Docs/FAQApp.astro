@@ -1,10 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import { getI18N } from "@i18n/index";
-import Container from "@components/Container.astro";
-import FaskedQ from "@components/docs/FAQ/FaskedQ.astro";
-import FAQSearch from "@components/docs/FAQ/FAQSearch.astro";
-import Relleno from "@components/common/Relleno.astro";
+import FAQContent from "@components/docs/FAQ/FAQContent.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -12,23 +9,5 @@ const { title, description } = i18n.SEO;
 ---
 
 <Layout title={title} description={description}>
-  <Container>
-    <h2 class="text-Azul text-center font-bold text-4xl leading-tight py-4">
-      Preguntas Frecuentes
-    </h2>
-    <FAQSearch placeHolder="Busca algo" />
-    <div class="py-10">
-      <Relleno />
-      <Relleno />
-      <Relleno />
-      <Relleno />
-      <Relleno />
-      <Relleno />
-      <Relleno />
-      <Relleno />
-      <Relleno />
-      <Relleno />
-      <Relleno />
-    </div>
-  </Container>
+  <FAQContent />
 </Layout>

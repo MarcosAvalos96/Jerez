@@ -19,6 +19,10 @@ export const ui = {
     "nav.catalogo": "Catálogo y descarga",
     "nav.directorio": "Directorio de servicios",
     "nav.docs": "Documentación",
+    "nav.privacy": "Aviso Legal",
+    "nav.DOC.documentos": "Documentos",
+    "nav.DOC.faq": "Preguntas Frecuentes",
+    "nav.DOC.manuales": "Manuales",
   },
   en: {
     "nav.index": "Home",
@@ -26,6 +30,10 @@ export const ui = {
     "nav.catalogo": "Catalog and Download",
     "nav.directorio": "Service Directory",
     "nav.docs": "Documentation",
+    "nav.privacy": "Legal Notice",
+    "nav.DOC.documentos": "Docs",
+    "nav.DOC.faq": "Frequently Asked Questions",
+    "nav.DOC.manuales": "Manuals",
   },
 } as const;
 
@@ -36,6 +44,10 @@ export const routes = {
     catalogo: "catalogo",
     directorio: "directorio",
     docs: "docs",
+    privacy: "privacy",
+    documentos: "/DOC/documentos/",
+    faq: "/DOC/faq/",
+    manuales: "/DOC/manuales",
   },
   es: {
     index: "home",
@@ -43,5 +55,9 @@ export const routes = {
     catalogo: "catalogo",
     directorio: "directorio",
     docs: "docs",
+    privacy: "privacy",
+    documentos: "DOC/documentos",
+    faq: "DOC/faq",
+    manuales: "DOC/manuales",
   },
 };
