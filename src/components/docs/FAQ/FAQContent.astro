@@ -2,6 +2,7 @@
 import { getI18N } from "@i18n/index";
 import Container from "@components/Container.astro";
 import FAQSearch from "./FAQSearch.astro";
+
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const { Data, title } = i18n.FAQ;

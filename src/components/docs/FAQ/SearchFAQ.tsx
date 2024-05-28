@@ -1,0 +1,49 @@
+import { useState } from "react";
+
+const SearchFAQ = ({ placeholder, onSearch }) => {
+  const [query, setQuery] = useState("");
+
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setQuery(value);
+    onSearch(value);
+  };
+
+  return;
+  <section className="flex items-center justify-center pt-2">
+    <div className="relative w-full max-w-sm">
+      <input
+        type="text"
+        value={query}
+        onChange={handleInputChange}
+        placeholder={placeholder}
+        className="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-SoftBlue"
+      />
+      <div className="absolute border-l-2 border-SoftBlue/10 inset-y-0 right-0 flex items-center justify-center space-x-2 pr-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="w-6 h-6 text-Azul cursor-pointer"
+        >
+          <path d="M12 2l6 6H6l6-6zM6 12l6 6 6-6H6z"></path>
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="w-6 h-6 text-Azul cursor-pointer"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M6.225 4.811a.75.75 0 011.06 0L12 9.525l4.715-4.714a.75.75 0 111.06 1.06L13.06 10.5l4.714 4.715a.75.75 0 01-1.06 1.06L12 11.475l-4.715 4.714a.75.75 0 01-1.06-1.06L10.94 10.5 6.225 5.785a.75.75 0 010-1.06z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </section>;
+};
+
+export default SearchFAQ;

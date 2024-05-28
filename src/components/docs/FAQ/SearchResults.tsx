@@ -1,0 +1,1 @@
+import SearchFAQ from "./SearchFAQ";
