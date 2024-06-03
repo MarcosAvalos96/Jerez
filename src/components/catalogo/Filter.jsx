@@ -15,7 +15,7 @@ function Filter() {
   }
   return (
     <>
-       <main className={`p-4 rounded-xl  bg-slate-200 ${showContent ? "":"mb-20"}`}>
+       <main className={`p-4 rounded-xl  bg-slate-200 ${showContent ? "mb-10":"mb-20"}`}>
     <section>
       <div
         className="flex flex-col md:flex-row items-center justify-center md:justify-center space-y-4 md:space-y-0 md:space-x-4 flex-wrap"
@@ -50,9 +50,9 @@ function Filter() {
       </div>
     </section>
 
- 
+    { showContent &&<AdvContent/> }    
   </main>
-{ showContent &&<AdvContent/> }    
+
     </>
  
   )
