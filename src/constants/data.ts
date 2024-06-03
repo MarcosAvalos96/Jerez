@@ -34,6 +34,7 @@ export const DatosTable = [
     keyword: "Portal, Numero, Calles",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Tramos viales",
@@ -42,6 +43,7 @@ export const DatosTable = [
     keyword: "Tramos Viales, Vias, Aparcamiento",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Parking",
@@ -50,6 +52,7 @@ export const DatosTable = [
     keyword: "Parking, Aparcamiento",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias1",
@@ -58,6 +61,7 @@ export const DatosTable = [
     keyword: "Vias",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias2",
@@ -66,6 +70,7 @@ export const DatosTable = [
     keyword: "Vias, Calles",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias3",
@@ -74,6 +79,7 @@ export const DatosTable = [
     keyword: "Numero, Portal",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias4",
@@ -82,6 +88,7 @@ export const DatosTable = [
     keyword: "Calles, Tramos Viales",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Número de portal",
@@ -90,6 +97,7 @@ export const DatosTable = [
     keyword: "Portal, Numero, Parking",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Tramos viales",
@@ -98,6 +106,7 @@ export const DatosTable = [
     keyword: "Tramos Viales, Vias",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Parking",
@@ -106,6 +115,7 @@ export const DatosTable = [
     keyword: "Parking, Aparcamiento, Vias",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias1",
@@ -114,6 +124,7 @@ export const DatosTable = [
     keyword: "Vias, Numero",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias2",
@@ -122,6 +133,7 @@ export const DatosTable = [
     keyword: "Vias, Calles, Tramos Viales",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias3",
@@ -130,6 +142,7 @@ export const DatosTable = [
     keyword: "Vias, Numero, Portal",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias4",
@@ -138,6 +151,7 @@ export const DatosTable = [
     keyword: "Calles, Tramos Viales, Parking",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Número de portal",
@@ -146,6 +160,7 @@ export const DatosTable = [
     keyword: "Portal, Aparcamiento, Tramos Viales",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Parking",
@@ -154,6 +169,7 @@ export const DatosTable = [
     keyword: "Parking, Calles, Numero",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias1",
@@ -162,6 +178,7 @@ export const DatosTable = [
     keyword: "Vias, Tramos Viales, Portal",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias2",
@@ -170,6 +187,7 @@ export const DatosTable = [
     keyword: "Vias, Calles, Parking",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias3",
@@ -178,6 +196,7 @@ export const DatosTable = [
     keyword: "Vias, Numero, Aparcamiento",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Vias4",
@@ -186,6 +205,7 @@ export const DatosTable = [
     keyword: "Calles, Tramos Viales, Numero",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Número de portal",
@@ -194,6 +214,7 @@ export const DatosTable = [
     keyword: "Portal, Calles, Vias",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
   {
     title: "Tramos viales",
@@ -202,5 +223,14 @@ export const DatosTable = [
     keyword: "Tramos Viales, Numero, Aparcamiento",
     vizualizar: "Vizualizar",
     descargar: "Descargar",
+    ver: "Ver",
   },
+];
+
+export const Tema = [
+  { label: "Tema 1", value: "tema1" },
+  { label: "Tema 2", value: "tema2" },
+  { label: "Tema 3", value: "tema3" },
+  { label: "Tema 4", value: "tema4" },
+  { label: "Tema 5", value: "tema5" },
 ];

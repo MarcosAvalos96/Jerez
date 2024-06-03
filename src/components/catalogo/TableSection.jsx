@@ -1,5 +1,5 @@
 import { DatosTable } from "@constants/data"
-
+import VerModal from "./VerModal"
 
 const TableSection = () => {
   return (
@@ -47,6 +47,12 @@ const TableSection = () => {
                 className="px-5 py-3 text-sm font-normal text-left  text-textColor uppercase bg-white border-b border-gray-200"
               >
                 Descargar
+              </th>
+              <th
+                scope="col"
+                className="px-5 py-3 text-sm font-normal text-left  text-textColor uppercase bg-white border-b border-gray-200"
+              >
+                Metadatos
               </th>
             </tr>
           </thead>
@@ -104,7 +110,13 @@ const TableSection = () => {
                        >
                        </span>
                        <span className="relative text-center ">{dato.descargar}</span>
+                   
                      </span>
+                   </td>
+
+                   <td className="px-5   bg-white border-b border-gray-200">
+                      
+<VerModal/>                   
                    </td>
                  </tr>
             )
