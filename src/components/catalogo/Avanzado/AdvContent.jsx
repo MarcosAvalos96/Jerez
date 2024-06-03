@@ -8,7 +8,7 @@ const AdvContent = () => {
   return (
     <main className=" pt-8 pb-20">
              <h2
-    class="text-primary text-left md:text-center  font-bold text-2xl leading-tight py-4"
+    class="text-primary text-center  text-left  font-bold text-2xl leading-tight py-4"
   >
     Búsqueda Avanzada
   </h2>
