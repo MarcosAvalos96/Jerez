@@ -3,11 +3,19 @@ import RGComponet from "./RadioGroup";
 import DesdePicker from "./DesdeDate";
 import HastaPicker from "./HastaDate";
 import KeyWords from "./KeyWord";
-import { CleanButton, SearchButton } from "./Buttons";
+import AdvContent from "./Avanzado/AdvContent";
+import { CleanButton, SearchButton, AdvancedButton } from "./Buttons";
+import { useState } from "react";
+
 
 function Filter() {
+  const [showContent, setShowContent]= useState(false)
+  const toggleContent = ()=>{
+    setShowContent(!showContent)
+  }
   return (
-    <main className="p-4 rounded-xl mb-8 bg-slate-200">
+    <>
+       <main className={`p-4 rounded-xl  bg-slate-200 ${showContent ? "":"mb-20"}`}>
     <section>
       <div
         className="flex flex-col md:flex-row items-center justify-center md:justify-center space-y-4 md:space-y-0 md:space-x-4 flex-wrap"
@@ -38,9 +46,15 @@ function Filter() {
         <RGComponet />
         <CleanButton />
         <SearchButton />
+        <AdvancedButton onClick={toggleContent} />
       </div>
     </section>
+
+ 
   </main>
+{ showContent &&<AdvContent/> }    
+    </>
+ 
   )
 }
 
