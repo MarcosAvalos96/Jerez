@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Select, SelectItem, Tooltip } from "@nextui-org/react";
-import { Tema } from "@constants/data";
+import { Creado } from "@constants/data";
 
 export default function AdvTema() {
   const [personName, setPersonName] = React.useState([]);
@@ -35,16 +35,15 @@ export default function AdvTema() {
               crossOffset={-120}
             >
               <Select
-                multiple={false}
                 labelPlacement={placement}
-                label="Tema"
-                placeholder="Seleciona el tema deseado"
+                label="Creado"
+                placeholder="Seleccione una fecha"
                 selectionMode="multiple"
                 className="max-w-xs"
                 value={personName}
                 onChange={handleChange}
               >
-                {Tema.map((name) => (
+                {Creado.map((name) => (
                   <SelectItem key={name.value} value={name.value}>
                     {name.label}
                   </SelectItem>

@@ -234,3 +234,10 @@ export const Tema = [
   { label: "Tema 4", value: "tema4" },
   { label: "Tema 5", value: "tema5" },
 ];
+export const Creado = [
+  { label: "13/05/2024", value: "1" },
+  { label: "04/06/2024", value: "2" },
+  { label: "05/06/2024", value: "3" },
+  { label: "06/06/2024", value: "4" },
+  { label: "07/06/2024", value: "5" },
+];
