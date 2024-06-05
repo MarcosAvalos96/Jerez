@@ -241,3 +241,24 @@ export const Creado = [
   { label: "06/06/2024", value: "4" },
   { label: "07/06/2024", value: "5" },
 ];
+export const Publish = [
+  { label: "publicador1", value: "1" },
+  { label: "publicador2", value: "2" },
+  { label: "publicador3", value: "3" },
+  { label: "publicador4", value: "4" },
+  { label: "publicador5", value: "5" },
+];
+export const Sub = [
+  { label: "Subject1", value: "1" },
+  { label: "Subject2", value: "2" },
+  { label: "Subject3", value: "3" },
+  { label: "Subject4", value: "4" },
+  { label: "Subject5", value: "5" },
+];
+export const Cont = [
+  { label: "Contrigutr1", value: "1" },
+  { label: "Contrigutr2", value: "2" },
+  { label: "Contrigutr3", value: "3" },
+  { label: "Contrigutr4", value: "4" },
+  { label: "Contrigutr5", value: "5" },
+];

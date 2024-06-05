@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Select, SelectItem, Tooltip } from "@nextui-org/react";
-import { formato  } from "@constants/data";
+import { formato } from "@constants/data";
 
 export default function AdvFormato() {
   const [personName, setPersonName] = React.useState([]);
@@ -36,8 +36,8 @@ export default function AdvFormato() {
             >
               <Select
                 labelPlacement={placement}
-                label="Formato"
-                placeholder="Seleciona el formato deseado"
+                label="Modified"
+                placeholder="Seleciona las fecha deseadas"
                 selectionMode="multiple"
                 className="max-w-xs"
                 value={personName}

@@ -2,6 +2,7 @@
 import { getI18N } from "@i18n/index";
 import Container from "@components/Container.astro";
 import FAQSearch from "./FAQSearch.astro";
+import ContenidoReact from "./ContenidoReact";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -9,108 +10,5 @@ const { Data, title } = i18n.FAQ;
 ---
 
 <Container className=" py-10">
-  <h2 class="text-Azul text-center font-bold text-4xl leading-tight py-4">
-    {title}
-  </h2>
-  <FAQSearch placeHolder="Busca algo" />
-  <div class="py-10">
-    {
-      Data.map((item) => (
-        <main class="mx-auto py-4">
-          <h5 class="text-xl font-semibold text-Azul">{item.title}</h5>
-          {item.body ? <p class="py-1">{item.body}</p> : ""}
-          {item.body2 ? <p class="py-1">{item.body2}</p> : ""}
-          {item.ul ? (
-            <section class=" py-4">
-              {item.ul.title ? (
-                <span class="font-semibold px-8">{item.ul.title}</span>
-              ) : (
-                ""
-              )}
-              {item.ul.list &&
-                item.ul.list.map((listItem) => (
-                  <ul class="py-1 px-14 space-y-4">
-                    {listItem["1st"] && (
-                      <li class=" py-1 list-disc">{listItem["1st"]}</li>
-                    )}
-                    {listItem["2nd"] && (
-                      <li class="py-1 list-disc">{listItem["2nd"]}</li>
-                    )}
-                    {listItem["3rd"] && (
-                      <li class=" py-1 list-disc">{listItem["3rd"]}</li>
-                    )}
-                    {listItem["4th"] && (
-                      <li class=" py-1 list-disc">{listItem["4th"]}</li>
-                    )}
-                  </ul>
-                ))}
-              {item.ul.endList ? (
-                <span class="italic px-8 ">{item.ul.endList}</span>
-              ) : (
-                ""
-              )}
-
-              {item.ul.title2 ? (
-                <span class="font-semibold px-8">{item.ul.title2}</span>
-              ) : (
-                ""
-              )}
-              {item.ul.list2 &&
-                item.ul.list2.map((listItem) => (
-                  <ul class="py-1 space-y-4 px-14">
-                    {listItem["1st"] && (
-                      <li class="py-1 list-disc">{listItem["1st"]}</li>
-                    )}
-                    {listItem["2nd"] && (
-                      <li class="py-1 list-disc">{listItem["2nd"]}</li>
-                    )}
-                    {listItem["3rd"] && (
-                      <li class="py-1 list-disc">{listItem["3rd"]}</li>
-                    )}
-                    {listItem["4th"] && (
-                      <li class="py-1 list-disc">{listItem["4th"]}</li>
-                    )}
-                  </ul>
-                ))}
-              {item.ul.title3 ? (
-                <span class="font-semibold px-8">{item.ul.title3}</span>
-              ) : (
-                ""
-              )}
-              {item.ul.list3 &&
-                item.ul.list3.map((listItem) => (
-                  <ul class="py-1  px-14 space-y-4">
-                    {listItem["1st"] && (
-                      <li class="list-disc py-1">{listItem["1st"]}</li>
-                    )}
-                    {listItem["2nd"] && (
-                      <li class="list-disc py-1">{listItem["2nd"]}</li>
-                    )}
-                  </ul>
-                ))}
-              {item.ul.title4 ? (
-                <span class="font-semibold py-1 px-8">{item.ul.title4}</span>
-              ) : (
-                ""
-              )}
-              {item.ul.list4 &&
-                item.ul.list4.map((listItem) => (
-                  <ul class="py-1 px-14  space-y-4">
-                    {listItem["1st"] && (
-                      <li class=" list-disc py-1">{listItem["1st"]}</li>
-                    )}
-                    {listItem["2nd"] && (
-                      <li class="list-disc py-1">{listItem["2nd"]}</li>
-                    )}
-                  </ul>
-                ))}
-            </section>
-          ) : (
-            ""
-          )}
-          {item.EndL ? <p class="py-1 italic">{item.EndL}</p> : ""}
-        </main>
-      ))
-    }
-  </div>
+  <ContenidoReact client:load />
 </Container>

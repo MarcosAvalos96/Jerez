@@ -37,8 +37,8 @@ export default function AdvTema() {
               <Select
                 multiple={false}
                 labelPlacement={placement}
-                label="Tema"
-                placeholder="Seleciona el tema deseado"
+                label="Coverage"
+                placeholder="Selecciona los coverage deseados"
                 selectionMode="multiple"
                 className="max-w-xs"
                 value={personName}

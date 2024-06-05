@@ -3,6 +3,8 @@ import Trabajando from "@components/common/Trabajando.astro";
 import Layout from "@layouts/Layout.astro";
 import { getI18N } from "@i18n/index";
 import Container from "@components/Container.astro";
+import ContenidoDocumentosReact from "./ContenidoDocumentosReact";
+import Files from "../../components/docs/FilesGrid.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const { title, description } = i18n.SEO;
@@ -15,6 +17,6 @@ const { title, description } = i18n.SEO;
     >
       Documentos
     </h2>
-    <Trabajando />
+    <!-- <ContenidoDocumentosReact client:load /> -->
   </Container>
 </Layout>
